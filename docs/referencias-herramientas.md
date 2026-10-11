@@ -15,17 +15,19 @@ Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en l
 
 ## Equivalencias orientativas
 
-Los nombres y mecanismos no son idénticos entre herramientas. La tabla sirve para localizar el concepto equivalente, no para asumir que los archivos, el alcance o el comportamiento son intercambiables.
+Los nombres y mecanismos no son idénticos entre herramientas. Esta tabla sirve para localizar el concepto equivalente, no para asumir que los archivos, el alcance o el comportamiento son intercambiables.
 
 | Concepto común | GitHub Copilot | Claude Code | Cursor | OpenAI Codex |
 | --- | --- | --- | --- | --- |
-| Instrucciones persistentes del proyecto | `.github/copilot-instructions.md`; también admite `AGENTS.md` en entornos compatibles | `CLAUDE.md`; también admite `AGENTS.md` | Reglas de proyecto en `.cursor/rules/`; admite instrucciones `AGENTS.md` en flujos compatibles | `AGENTS.md` |
-| Instrucciones específicas por contexto o ruta | `.github/instructions/*.instructions.md` en entornos compatibles | Instrucciones y reglas mediante archivos de memoria/configuración y reglas del proyecto | Reglas con ámbito y patrones de aplicación | Instrucciones `AGENTS.md` por directorio; el alcance depende de la ubicación |
-| Flujos de trabajo reutilizables (*skills*) | Disponibilidad y soporte según el producto y el entorno | Skills | Skills | Skills |
-| Automatización por eventos (*hooks*) | Depende del producto o entorno de Copilot; no hay correspondencia universal | Hooks de Claude Code | No asumir equivalencia directa con reglas o skills; comprobar la funcionalidad vigente | Hooks según el entorno y las extensiones disponibles; comprobar la documentación vigente |
-| Conexión con herramientas externas | Integraciones y servidores MCP compatibles con el entorno | MCP | MCP | MCP |
+| Instrucciones persistentes del proyecto | `.github/copilot-instructions.md`; `AGENTS.md` en entornos compatibles | `CLAUDE.md` | `.cursor/rules/*.mdc` o `AGENTS.md` | `AGENTS.md` |
+| Instrucciones específicas por ruta | `.github/instructions/*.instructions.md` en entornos compatibles | Reglas en `.claude/rules/` con ámbito configurable | Reglas `.cursor/rules/*.mdc` con patrones de aplicación | `AGENTS.md` anidados por directorio; el más específico puede añadir instrucciones |
+| Flujos de trabajo reutilizables (*skills*) | Directorios con `SKILL.md`; la ruta depende del cliente | `.claude/skills/<nombre>/SKILL.md` | Skills con `SKILL.md`; ubicación según el tipo de instalación | `.agents/skills/<nombre>/SKILL.md` |
+| Automatización por eventos (*hooks*) | Hooks en CLI y plugins; la configuración depende del cliente | Hooks configurados en los ajustes de Claude Code | Hooks en la configuración de agente/plugins | Hooks disponibles en determinados entornos y plugins |
+| Conexión con herramientas externas (MCP) | Servidores MCP, según el cliente | Servidores MCP, configurables por ámbito | Servidores MCP desde configuración o archivos de proyecto | Servidores MCP desde configuración o plugins |
 
-**Importante:** esta equivalencia es conceptual y no implica compatibilidad automática. El soporte puede variar entre la app, el IDE, la CLI, el agente en la nube, la versión y el plan. Antes de copiar una configuración entre herramientas, verifica su documentación oficial. Los conceptos de [instrucciones y contexto](mapa-contenidos.md), [agentes y automatización](mapa-contenidos.md) y [seguridad](mapa-contenidos.md) se explican en el mapa temático.
+**Importante:** las equivalencias son conceptuales, no compatibilidad automática. Algunas funciones solo están disponibles en determinadas modalidades o versiones, y el alcance de una configuración puede cambiar entre productos. Antes de reutilizar archivos o copiar una configuración, verifica la documentación oficial de la herramienta y el entorno concretos.
+
+Para profundizar, consulta el [mapa de contenidos](mapa-contenidos.md): [contexto e instrucciones](mapa-contenidos.md), [agentes y automatización](mapa-contenidos.md) y [seguridad](mapa-contenidos.md).
 
 ## Relación con el resto de la guía
 
