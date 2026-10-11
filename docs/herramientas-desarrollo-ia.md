@@ -12,7 +12,7 @@ Las categorías describen la interfaz o el flujo de trabajo principal, no límit
 
 | Herramienta | Enfoque | Documentación oficial |
 | --- | --- | --- |
-| **Visual Studio Code + GitHub Copilot** | Editor generalista con chat, autocompletado y funciones agénticas mediante extensiones. | [Documentación de Copilot](https://docs.github.com/en/copilot) · [Inicio rápido](https://docs.github.com/en/copilot/get-started/quickstart) |
+| **Visual Studio Code** | Editor de código multiplataforma, extensible mediante un amplio ecosistema de extensiones e integraciones. | [Documentación oficial](https://code.visualstudio.com/docs) · [Inicio rápido](https://code.visualstudio.com/docs/getstarted/getting-started) |
 | **Cursor** | Editor basado en VS Code con asistencia y agentes integrados en el flujo de edición. | [Documentación](https://cursor.com/docs) · [Inicio rápido](https://cursor.com/docs/get-started/quickstart) |
 | **Kiro** | Entorno de desarrollo que promueve un flujo guiado por especificaciones, requisitos y tareas. | [Documentación](https://kiro.dev/docs/) |
 
