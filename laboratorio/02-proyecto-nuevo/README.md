@@ -18,6 +18,25 @@ Construye una API REST para gestionar puntos de interés geográficos. Cada punt
 6. **Documentar la configuración:** registra cómo instalar, ejecutar y probar. Añade instrucciones para el asistente (por ejemplo, `AGENTS.md`) solo con convenciones útiles y comprobables.
 7. **Revisar seguridad:** valida entradas, evita secretos en el repositorio y no habilites herramientas o permisos del agente sin necesidad.
 
+El proceso es iterativo: las pruebas y la revisión pueden revelar que hay que ajustar la implementación, el diseño o incluso los criterios de aceptación.
+
+```mermaid
+flowchart TD
+    A["Requisitos y criterios de aceptación"]
+    B["Diseño proporcional al alcance"]
+    C["Aplicación mínima ejecutable"]
+    D["Pruebas automatizadas"]
+    E["Implementar un incremento"]
+    F["Revisar diff y seguridad"]
+    G{"¿Pasan las comprobaciones?"}
+    H["Documentar y cerrar la iteración"]
+    I["Analizar el fallo y ajustar"]
+
+    A --> B --> C --> D --> E --> F --> G
+    G -- "Sí" --> H
+    G -- "No" --> I --> E
+```
+
 ## Criterios de aceptación iniciales
 
 - La API permite consultar puntos y recuperar un punto por identificador.
