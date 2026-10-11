@@ -40,6 +40,7 @@ flowchart TB
 - [Laboratorio 05: desarrollo de una funcionalidad con IA](../laboratorio/05-desarrollo-funcionalidad-ia/README.md)
 
 ### 2. Contexto e instrucciones
+- [Instrucciones persistentes del proyecto](instrucciones-persistentes.md)
 - [Herramientas de desarrollo asistido por IA](herramientas-desarrollo-ia.md)
 - [Referencias de herramientas y documentación](referencias-herramientas.md)
 - [Diseño de ejercicios](estructura-ejercicios.md)

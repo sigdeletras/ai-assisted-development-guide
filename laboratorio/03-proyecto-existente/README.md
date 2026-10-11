@@ -49,6 +49,10 @@ Contrasta las conclusiones con el código, la documentación y la configuración
 
 ### 4. Configurar las instrucciones de la herramienta
 
+Antes de empezar, lee [Instrucciones persistentes del proyecto](../../docs/instrucciones-persistentes.md): qué incluir, cómo evitar duplicados entre herramientas y cómo comprobar que se aplican.
+
+En este laboratorio solo se crean las **instrucciones generales del repositorio**. Las reglas por ruta, las skills, los hooks y los permisos se tratan en el [laboratorio 04](../04-configuracion-entorno-ia/README.md).
+
 Decide qué mecanismo de instrucciones persistentes corresponde a las herramientas que se van a utilizar. Las instrucciones deben ser breves, comprobables y útiles para tareas recurrentes:
 
 - descripción y arquitectura del proyecto, solo en la medida en que ayude a trabajar;
@@ -65,7 +69,7 @@ Decide qué mecanismo de instrucciones persistentes corresponde a las herramient
 | Instrucciones generales del repositorio | `AGENTS.md` en herramientas compatibles | Usarlo si las herramientas elegidas lo leen y el contenido es compartido. |
 | Instrucciones específicas de Claude Code | `CLAUDE.md` | Añadirlo cuando se utilice Claude Code; puede remitir a instrucciones compartidas si el formato y la herramienta lo permiten. |
 | Instrucciones específicas de GitHub Copilot | `.github/copilot-instructions.md` y, en entornos compatibles, instrucciones por ruta | Elegir según el producto y el ámbito que se quiera cubrir. |
-| Configuración propia de una herramienta | Archivos de configuración, reglas o ajustes del cliente | Añadirla solo cuando resuelva una necesidad concreta; no equivale necesariamente a un archivo de instrucciones. |
+| Configuración propia de una herramienta | Archivos de configuración, reglas o ajustes del cliente | Fuera del alcance de este laboratorio; se evalúa en el laboratorio 04. |
 
 Los nombres y capacidades dependen de la herramienta y pueden cambiar. Antes de crear archivos, consulta la documentación oficial vigente de los asistentes que realmente se vayan a usar. La tabla es orientativa, no una garantía de compatibilidad universal.
 
@@ -129,5 +133,5 @@ No empieces pidiendo «mejora todo el proyecto». Empieza por entender qué exis
 ## Documentación oficial para verificar formatos
 
 - [GitHub Copilot: personalizar respuestas](https://docs.github.com/en/copilot/customizing-copilot)
-- [Claude Code: memoria e instrucciones del proyecto](https://docs.anthropic.com/en/docs/claude-code/memory)
+- [Claude Code: memoria e instrucciones del proyecto](https://code.claude.com/docs/en/memory)
 - [AGENTS.md: repositorio del formato](https://github.com/agentsmd/agents.md)

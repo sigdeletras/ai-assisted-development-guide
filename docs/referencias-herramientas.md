@@ -15,10 +15,7 @@ Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en l
 
 ## Equivalencias orientativas
 
-- **Documentación:** [Claude Code overview](https://code.claude.com/docs/en/overview).
-- **Inicio rápido:** [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
-- **Buenas prácticas:** [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices). Describe flujos de exploración, planificación, implementación y verificación, así como el uso de instrucciones persistentes.
-- **Privacidad y seguridad:** [Data usage](https://code.claude.com/docs/en/data-usage) y [Security](https://code.claude.com/docs/en/security).
+La tabla relaciona mecanismos parecidos entre productos; no implica que sean idénticos ni que tengan el mismo alcance. Para el criterio de uso de las instrucciones generales, consulta [Instrucciones persistentes del proyecto](instrucciones-persistentes.md).
 
 | Concepto común | GitHub Copilot | Claude Code | Cursor | OpenAI Codex |
 | --- | --- | --- | --- | --- |
@@ -28,12 +25,23 @@ Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en l
 | Automatización por eventos (*hooks*) | Disponible en CLI y determinados entornos/plugins | Hooks configurados en los ajustes de Claude Code | Hooks según configuración de agente y plugins | Disponible en determinados entornos |
 | Herramientas externas (MCP) | Servidores MCP, según cliente | Servidores MCP configurables por ámbito | Servidores MCP desde configuración o archivos de proyecto | Servidores MCP desde configuración o plugins |
 
+## Dónde ampliar información
+
+### Claude Code
+
+- **Documentación:** [Claude Code overview](https://code.claude.com/docs/en/overview).
+- **Inicio rápido:** [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
+- **Buenas prácticas:** [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices). Describe flujos de exploración, planificación, implementación y verificación, así como el uso de instrucciones persistentes.
+- **Privacidad y seguridad:** [Data usage](https://code.claude.com/docs/en/data-usage) y [Security](https://code.claude.com/docs/en/security).
+
+### Cursor
+
 - **Documentación:** [Cursor Docs](https://cursor.com/docs).
 - **Inicio rápido:** [Cursor Quickstart](https://cursor.com/docs/get-started/quickstart).
 - **Primer proyecto:** [Your first project](https://prod.cursor.com/help/getting-started/first-project).
 - **Privacidad y datos:** [Data Use & Privacy Overview](https://cursor.com/es/data-use) y [Privacy and data](https://prod.cursor.com/help/security-and-privacy/privacy). Revisa el estado de Privacy Mode, el modelo seleccionado y las excepciones indicadas por el proveedor.
 
-## Dónde ampliar información
+### OpenAI Codex
 
 Codex ofrece distintos puntos de entrada, entre ellos CLI, extensión para IDE, aplicación y versión web. Utiliza el cliente disponible y autorizado en tu entorno.
 
