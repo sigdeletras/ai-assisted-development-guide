@@ -1,58 +1,37 @@
 # AI-Assisted Development Guide
 
-(otra) Guía práctica y evolutiva sobre desarrollo de software asistido por inteligencia artificial.
+Guía práctica para incorporar asistentes y agentes de IA al trabajo diario de desarrollo de software, con especial atención a la calidad, la seguridad y la revisión humana.
 
-## Objetivo
+Está dirigida a desarrolladores con experiencia que empiezan a utilizar herramientas como GitHub Copilot, Claude Code o Cursor en proyectos reales. La prioridad es aprender a trabajar con ellas de forma útil y segura, sin añadir configuración innecesaria.
 
-Recopilar, estructurar y mantener buenas prácticas, metodologías, herramientas y recursos para integrar asistentes de IA y agentes de programación en el ciclo de desarrollo de software.
+## Por dónde empezar
 
-La guía está concebida como un itinerario de consulta y aprendizaje no lineal, dirigido especialmente a desarrolladores que desean mejorar su productividad sin comprometer la calidad, la seguridad ni la mantenibilidad del código.
+1. Consulta **[Primeros pasos con asistentes de programación](01-primeros-pasos.md)**.
+2. Elige una herramienta aprobada por tu empresa y sigue su guía oficial de inicio.
+3. Practica con tareas pequeñas: comprender código, investigar errores, escribir pruebas y proponer refactorizaciones.
+4. Revisa los cambios y ejecuta las comprobaciones del proyecto antes de aceptar el resultado.
 
-## Contenidos
+## Temas que se incorporarán progresivamente
 
-La guía abordará, entre otros, los siguientes ámbitos:
-
-- Fundamentos del desarrollo asistido por IA.
-- Contexto, instrucciones y reglas de proyecto.
-- Archivos `AGENTS.md` y `CLAUDE.md`.
-- Skills, hooks, herramientas y servidores MCP.
-- Agentes, subagentes y automatización.
-- Harness engineering y preparación de repositorios.
-- Spec-Driven Development y planificación de tareas.
-- Testing, revisión de código y control de calidad.
+- Cómo formular tareas y aportar contexto útil.
+- Revisión de cambios, pruebas y criterios de aceptación.
+- Instrucciones persistentes y reglas de proyecto.
+- Skills, hooks, agentes y subagentes.
+- MCP e integración con herramientas externas.
+- Preparación del repositorio (*harness engineering*).
+- Spec-Driven Development.
 - Seguridad, privacidad y gestión de permisos.
-- Integración con Git, GitHub y flujos de Pull Request.
-- Evaluación de herramientas y modelos.
-- Recursos oficiales, artículos técnicos y repositorios de referencia.
 
-## Filosofía
+Estos temas se añadirán cuando aporten valor práctico; no es necesario configurar todos desde el principio.
+
+## Criterios de la guía
 
 - Priorizar documentación oficial y fuentes verificables.
-- Distinguir los principios generales de las funciones específicas de cada herramienta.
-- Favorecer estándares y formatos reutilizables entre proveedores.
-- Incorporar ejemplos prácticos y procedimientos reproducibles.
-- Registrar las fuentes y revisar periódicamente su vigencia.
-- Evitar complejidad innecesaria en la configuración.
-- Someter las contribuciones y los cambios importantes a revisión.
+- Distinguir principios generales de funciones específicas de cada proveedor.
+- Incluir ejemplos aplicables a proyectos reales.
+- Revisar la vigencia de los enlaces y recomendaciones.
+- No compartir credenciales ni datos confidenciales sin autorización y sin comprobar las políticas de la empresa.
 
-## Herramientas de referencia
+## Contribuciones y estado
 
-La guía contempla herramientas como GitHub Copilot, Claude Code, Cursor y otros asistentes de desarrollo, sin depender exclusivamente de un proveedor.
-
-## Cómo utilizar la guía
-
-El contenido se organizará progresivamente en módulos temáticos, procedimientos, ejemplos y recursos externos. No es necesario seguir una secuencia estrictamente lineal.
-
-## Contribuciones
-
-Se aceptan propuestas de mejora, correcciones y nuevos recursos mediante GitHub Issues y Pull Requests.
-
-Las contribuciones deben identificar las fuentes relevantes, distinguir los hechos de las recomendaciones y evitar la incorporación de credenciales, información confidencial o datos de terceros.
-
-## Licencia
-
-Consulta el archivo `LICENSE` para conocer las condiciones de reutilización del contenido original.
-
-## Estado del proyecto
-
-Proyecto en desarrollo. La estructura y los contenidos evolucionarán a medida que se validen las metodologías y los recursos recopilados.
+Proyecto en desarrollo. Las propuestas deben incluir fuentes relevantes y explicar su utilidad. La inclusión de una herramienta o práctica en la guía no implica que sea adecuada para todos los proyectos.
