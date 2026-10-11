@@ -161,11 +161,11 @@ La disponibilidad de cada mecanismo depende de la herramienta, la interfaz, la v
 
 - [GitHub Copilot: guía comparativa de opciones de personalización](https://docs.github.com/en/copilot/reference/customization-cheat-sheet)
 - [GitHub Copilot: tipos de instrucciones y compatibilidad](https://docs.github.com/en/copilot/reference/custom-instructions-support)
-- [Claude Code: memoria e instrucciones del proyecto](https://docs.anthropic.com/en/docs/claude-code/memory)
-- [Claude Code: skills](https://docs.anthropic.com/en/docs/claude-code/skills)
-- [Claude Code: hooks](https://docs.anthropic.com/en/docs/claude-code/hooks)
-- [Claude Code: subagentes](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
-- [Cursor: documentación](https://docs.cursor.com/)
+- [Claude Code: memoria e instrucciones del proyecto](https://code.claude.com/docs/en/memory)
+- [Claude Code: skills](https://code.claude.com/docs/en/skills)
+- [Claude Code: hooks](https://code.claude.com/docs/en/hooks)
+- [Claude Code: subagentes](https://code.claude.com/docs/en/sub-agents)
+- [Cursor: reglas de proyecto](https://docs.cursor.com/context/rules)
 - [Codex: documentación](https://developers.openai.com/codex/)
 - [Formato AGENTS.md](https://github.com/agentsmd/agents.md)
 
