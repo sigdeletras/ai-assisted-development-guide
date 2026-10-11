@@ -1,1 +1,1 @@
-"""Aplicación mínima de puntos de interés para el laboratorio 03."""
+"""Aplicación mínima de puntos de interés para los laboratorios de la guía."""

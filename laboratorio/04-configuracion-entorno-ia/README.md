@@ -9,7 +9,11 @@ Al terminar, el repositorio tendrá una configuración **mínima, explicada y pr
 ## Preparación
 
 - Completa primero el [laboratorio 03](../03-proyecto-existente/README.md), o realiza un diagnóstico equivalente.
-- Utiliza la copia del proyecto de práctica preparada en el laboratorio 03 o un repositorio propio autorizado y no confidencial.
+- Elige el punto de partida:
+  - continúa con la copia del proyecto de práctica preparada en el laboratorio 03;
+  - parte del proyecto incluido en [`project/`](project/README.md), que reproduce el estado esperado al terminar el laboratorio 03: el mismo código y un `AGENTS.md` con las instrucciones generales; o
+  - utiliza un repositorio propio autorizado y no confidencial.
+- Si partes de `project/`, cópialo a un directorio independiente con su propio repositorio Git, igual que en el laboratorio 03.
 - Abre ese proyecto como espacio de trabajo del asistente y crea allí los archivos de configuración, nunca en la raíz de la guía. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
 - Elige una herramienta principal y, si procede, una segunda herramienta con la que quieras compartir instrucciones.
 - Comprueba la documentación oficial vigente y las políticas de tu organización.
@@ -64,7 +68,9 @@ No conviertas hipótesis en convenciones. No crees archivos solo porque una herr
 
 ### 2. Configurar las instrucciones principales
 
-Crea o adapta el mecanismo de instrucciones persistentes que lea la herramienta elegida. Incluye únicamente información útil para tareas recurrentes:
+Parte de las instrucciones generales que ya existan: las que creaste en el laboratorio 03 o el `AGENTS.md` incluido en `project/`. No las aceptes por estar escritas: contrasta cada línea con el código, la configuración y la línea base, corrige lo que no se sostenga y adapta el mecanismo a la herramienta elegida. Consulta [Instrucciones persistentes del proyecto](../../docs/instrucciones-persistentes.md) para los criterios y la forma de comprobar que la herramienta las aplica.
+
+Las instrucciones deben incluir únicamente información útil para tareas recurrentes:
 
 - propósito y arquitectura del proyecto;
 - comandos reales para instalar, ejecutar, probar y validar;

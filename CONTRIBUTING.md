@@ -49,6 +49,8 @@ Sustituye `main` por el nombre real de la rama principal si el repositorio utili
 
 Realiza cambios acotados y coherentes. Mantén separadas las modificaciones no relacionadas para que puedan revisarse de forma independiente.
 
+El proyecto de `laboratorio/04-configuracion-entorno-ia/project/` es una réplica de `laboratorio/03-proyecto-existente/project/` más su `AGENTS.md`. Si modificas el código, las pruebas o la configuración del proyecto del laboratorio 03, aplica el mismo cambio en la réplica y revisa que `AGENTS.md` siga siendo correcto.
+
 ### 3. Validar el contenido
 
 Antes de enviar la propuesta, comprueba:

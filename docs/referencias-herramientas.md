@@ -19,7 +19,7 @@ La tabla relaciona mecanismos parecidos entre productos; no implica que sean id�
 
 | Concepto común | GitHub Copilot | Claude Code | Cursor | OpenAI Codex |
 | --- | --- | --- | --- | --- |
-| Instrucciones persistentes del proyecto | `.github/copilot-instructions.md`; `AGENTS.md` en entornos compatibles | `CLAUDE.md` | `.cursor/rules/*.mdc` o `AGENTS.md` | `AGENTS.md` |
+| Instrucciones persistentes del proyecto | `.github/copilot-instructions.md`; `AGENTS.md` (prevalece el más cercano) | `CLAUDE.md`; `AGENTS.md` si no hay `CLAUDE.md` (desde v2.1.277) | `.cursor/rules/*.mdc` o `AGENTS.md` | `AGENTS.md` |
 | Instrucciones específicas por ruta | `.github/instructions/*.instructions.md` en entornos compatibles | Reglas en `.claude/rules/` con ámbito configurable | Reglas `.cursor/rules/*.mdc` con patrones de aplicación | `AGENTS.md` anidados por directorio |
 | Flujos reutilizables (*skills*) | Directorios con `SKILL.md`; ubicación según cliente | `.claude/skills/<nombre>/SKILL.md` | Skills con `SKILL.md`; ubicación según modalidad | `.agents/skills/<nombre>/SKILL.md` |
 | Automatización por eventos (*hooks*) | Disponible en CLI y determinados entornos/plugins | Hooks configurados en los ajustes de Claude Code | Hooks según configuración de agente y plugins | Disponible en determinados entornos |
@@ -33,6 +33,7 @@ La tabla relaciona mecanismos parecidos entre productos; no implica que sean id�
 - **Inicio rápido:** [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
 - **Buenas prácticas:** [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices). Describe flujos de exploración, planificación, implementación y verificación, así como el uso de instrucciones persistentes.
 - **Privacidad y seguridad:** [Data usage](https://code.claude.com/docs/en/data-usage) y [Security](https://code.claude.com/docs/en/security).
+- **Instrucciones del proyecto:** [CLAUDE.md y AGENTS.md](https://code.claude.com/docs/en/memory). Explica qué archivos carga, en qué orden y cómo comprobarlo con `/context`.
 
 ### Cursor
 
@@ -49,6 +50,12 @@ Codex ofrece distintos puntos de entrada, entre ellos CLI, extensión para IDE, 
 - **Recursos para desarrolladores:** [Codex — OpenAI Developers](https://developers.openai.com/learn/codex).
 - **CLI:** [Repositorio oficial de Codex CLI](https://github.com/openai/codex).
 - **Privacidad y datos:** [Controles de datos de la plataforma API](https://developers.openai.com/api/docs/guides/your-data) y [controles de datos de ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-faq). No asumas que las condiciones de la API, ChatGPT y los distintos clientes de Codex son idénticas.
+
+### AGENTS.md
+
+- **Especificación y guía:** [agents.md](https://agents.md/) y [repositorio del formato](https://github.com/agentsmd/agents.md). Recoge los temas recomendados, la prioridad de los archivos anidados y la lista de herramientas compatibles.
+- **GitHub Copilot:** [Añadir instrucciones al repositorio](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions), incluido el uso de `AGENTS.md`.
+- Criterios de uso en esta guía: [Instrucciones persistentes del proyecto](instrucciones-persistentes.md).
 
 ## Criterios para usar estas referencias
 

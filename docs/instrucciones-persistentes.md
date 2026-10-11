@@ -54,12 +54,32 @@ Criterios:
 3. **Si usáis varias**, mantén una sola fuente de contenido. `AGENTS.md` es un formato abierto que leen varias herramientas; las que usan su propio archivo pueden remitir a él cuando lo admitan.
 4. **No dupliques contenido**. Dos archivos con las mismas instrucciones acaban divergiendo y el asistente recibe indicaciones contradictorias.
 
+## El formato AGENTS.md
+
+[AGENTS.md](https://agents.md/) es un formato abierto que funciona como un «README para agentes»: reúne el contexto que necesita un agente de programación y que sobrecargaría el README dirigido a personas. Lo mantiene la Agentic AI Foundation, dentro de la Linux Foundation, y lo leen herramientas como Codex, Cursor, GitHub Copilot, VS Code, Gemini CLI o Claude Code.
+
+Según la guía oficial del formato:
+
+- **No tiene campos obligatorios.** Es Markdown estándar y admite cualquier encabezado; el agente interpreta el texto.
+- **Se crea en la raíz del repositorio.**
+- **Temas recomendados:** descripción del proyecto, comandos de compilación y pruebas, estilo de código, instrucciones de pruebas y consideraciones de seguridad.
+- **Temas adicionales útiles:** convenciones de commits y pull requests, particularidades de seguridad, conjuntos de datos grandes y pasos de despliegue; en general, lo que contarías a una persona nueva en el equipo.
+- **Archivos anidados:** en monorepos, cada subproyecto puede tener su propio `AGENTS.md`. Prevalece el más cercano al archivo que se edita.
+- **Prioridad:** las peticiones explícitas en el chat prevalecen sobre cualquier `AGENTS.md`. Por eso no sirve para imponer límites de seguridad.
+- **Comandos:** si el archivo incluye comandos de comprobación, el agente intentará ejecutarlos y corregir los fallos antes de terminar. Incluye solo comandos reales y verificados.
+- **Mantenimiento:** es documentación viva; actualízala cuando cambie el proyecto.
+- **Migración:** si el proyecto ya tenía otro archivo de instrucciones, la guía propone renombrarlo a `AGENTS.md` y dejar un enlace simbólico con el nombre antiguo.
+
+No dupliques el README. Remite a él para la estructura o la instalación detallada y reserva `AGENTS.md` para lo que el agente necesita para trabajar: comandos, convenciones, límites y criterio de terminado.
+
 ### Una fuente común para varias herramientas
 
-Patrón habitual cuando el equipo combina, por ejemplo, Codex o Cursor con Claude Code:
+Cuando el equipo usa varias herramientas, `AGENTS.md` es la fuente común. Cada herramienta lo carga a su manera; comprueba el comportamiento en su documentación oficial antes de añadir archivos propios:
 
-- `AGENTS.md` contiene las instrucciones compartidas.
-- `CLAUDE.md` importa ese archivo y solo añade lo específico de Claude Code, si hace falta.
+- **GitHub Copilot:** admite uno o varios `AGENTS.md` en cualquier lugar del repositorio; prevalece el más cercano en el árbol de directorios. Convive con `.github/copilot-instructions.md`.
+- **Claude Code:** desde la versión 2.1.277 lee `AGENTS.md` como instrucciones del proyecto **si no hay** `CLAUDE.md`, `.claude/CLAUDE.md` ni `CLAUDE.local.md` en el directorio de trabajo o por encima. Si existe alguno de ellos, carga solo los `CLAUDE.md`, salvo que se cambie el ajuste **Project instructions**.
+
+Si necesitas instrucciones específicas de Claude Code, o trabajas en una sesión que no puede leer `AGENTS.md` directamente, crea un `CLAUDE.md` que lo importe:
 
 ```markdown
 <!-- CLAUDE.md -->
@@ -68,7 +88,7 @@ Patrón habitual cuando el equipo combina, por ejemplo, Codex o Cursor con Claud
 <!-- Solo instrucciones específicas de Claude Code a partir de aquí, si las hay. -->
 ```
 
-La sintaxis `@ruta` es un mecanismo de importación de Claude Code; otras herramientas tienen el suyo o no lo tienen. Si la herramienta no admite importaciones, valora si basta con su archivo propio o si necesitas un enlace simbólico, y documenta la decisión. Comprueba el comportamiento en la documentación oficial antes de adoptar el patrón.
+La sintaxis `@ruta` es propia de Claude Code. Un `CLAUDE.md` que solo diga «lee AGENTS.md» con palabras no equivale a importarlo: el agente solo verá el archivo si decide abrirlo. Ten en cuenta también que crear un `CLAUDE.local.md` personal desactiva la lectura directa de `AGENTS.md`.
 
 ## Ejemplo orientativo
 
@@ -94,9 +114,16 @@ API de datos en Python (FastAPI) en `api/`. Arquitectura en `docs/arquitectura.m
 - No añadir dependencias ni cambiar la configuración de lint sin consultarlo.
 - No modificar pruebas existentes para que pasen; si una prueba parece incorrecta, explícalo.
 
+## Pruebas
+- Todo cambio de comportamiento incluye pruebas nuevas junto al código afectado.
+
 ## Antes de dar una tarea por terminada
 - Ejecuta las pruebas y el lint del componente afectado y resume el resultado.
 - Indica qué no has podido verificar.
+
+## Commits y pull requests
+- Mensajes con el formato `tipo(ámbito): resumen` (Conventional Commits).
+- No hagas commit ni push sin que se te pida.
 
 ## Seguridad
 - No leer ni mostrar `.env` ni `api/config/secrets/`.
@@ -108,7 +135,7 @@ Observa que cada línea es concreta, se puede verificar y remite a una ruta cuan
 
 Crear el archivo no garantiza que se use. Antes de darlo por válido:
 
-1. **Confirma que se carga.** Inicia una sesión nueva y pregunta qué comandos de prueba debe usar en el proyecto o qué límites tiene. Algunas herramientas muestran además qué archivos de instrucciones han cargado.
+1. **Confirma que se carga.** Inicia una sesión nueva y pregunta qué comandos de prueba debe usar en el proyecto o qué límites tiene. Algunas herramientas muestran además qué archivos han cargado; por ejemplo, en Claude Code, `/context` los lista en **Memory files**.
 2. **Pruébalo con una tarea de planificación.** Pide un plan para una incidencia pequeña y comprueba que propone los comandos y límites documentados.
 3. **Prueba un límite.** Pide algo que el archivo prohíbe y verifica que el asistente lo señala.
 4. **Revisa el estado de Git** después de la prueba para confirmar que no hay cambios no solicitados.
@@ -126,6 +153,7 @@ Si el asistente ignora una instrucción, revisa si es ambigua, si contradice otr
 
 - [Glosario](glosario.md): definiciones de AGENTS.md, CLAUDE.md, rules y skills.
 - [Referencias de herramientas](referencias-herramientas.md): equivalencias entre productos y enlaces a la documentación oficial.
+- Documentación oficial: [AGENTS.md](https://agents.md/), [Claude Code: CLAUDE.md y AGENTS.md](https://code.claude.com/docs/en/memory#agents-md) y [GitHub Copilot: instrucciones del repositorio](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions).
 - [Seguridad y privacidad al programar con IA](seguridad-privacidad-ia.md): tratamiento de secretos y datos en archivos de instrucciones.
 - [Laboratorio 03](../laboratorio/03-proyecto-existente/README.md): crear las instrucciones mínimas a partir del análisis de un proyecto existente.
 - [Laboratorio 04](../laboratorio/04-configuracion-entorno-ia/README.md): ampliar la configuración con reglas por ruta, skills, hooks y permisos.

@@ -10,7 +10,7 @@ El laboratorio se centra en **comprender y configurar antes de delegar cambios**
 
 - Utiliza una copia de un proyecto propio no confidencial o el proyecto de práctica incluido en [`project/`](project/README.md).
 - Trabaja en una copia independiente del proyecto, con su propio repositorio Git, y ábrela como espacio de trabajo del asistente. Sigue el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo); este README contiene las instrucciones del ejercicio, no la documentación del proyecto.
-- Utiliza la misma copia en los laboratorios 04 y 05.
+- Utiliza la misma copia en los laboratorios 04 y 05. El laboratorio 04 incluye además una réplica de este proyecto con las instrucciones generales ya creadas, para quien empiece directamente por él.
 - Comprueba las políticas de la organización antes de enviar código a un servicio de IA.
 - No incluyas credenciales, datos personales, secretos ni información contractual.
 - Trabaja con Git y registra el estado inicial. No sobrescribas cambios preexistentes.
@@ -67,11 +67,38 @@ Decide qué mecanismo de instrucciones persistentes corresponde a las herramient
 | Concepto agnóstico | Ejemplos de nombres o mecanismos | Criterio |
 | --- | --- | --- |
 | Instrucciones generales del repositorio | `AGENTS.md` en herramientas compatibles | Usarlo si las herramientas elegidas lo leen y el contenido es compartido. |
-| Instrucciones específicas de Claude Code | `CLAUDE.md` | Añadirlo cuando se utilice Claude Code; puede remitir a instrucciones compartidas si el formato y la herramienta lo permiten. |
+| Instrucciones específicas de Claude Code | `CLAUDE.md` | Claude Code lee `AGENTS.md` si no hay `CLAUDE.md`. Añadirlo solo si hacen falta instrucciones propias de Claude Code o la sesión no carga `AGENTS.md`; en ese caso, que lo importe con `@AGENTS.md`. |
 | Instrucciones específicas de GitHub Copilot | `.github/copilot-instructions.md` y, en entornos compatibles, instrucciones por ruta | Elegir según el producto y el ámbito que se quiera cubrir. |
 | Configuración propia de una herramienta | Archivos de configuración, reglas o ajustes del cliente | Fuera del alcance de este laboratorio; se evalúa en el laboratorio 04. |
 
 Los nombres y capacidades dependen de la herramienta y pueden cambiar. Antes de crear archivos, consulta la documentación oficial vigente de los asistentes que realmente se vayan a usar. La tabla es orientativa, no una garantía de compatibilidad universal.
+
+#### Pasos para crear el `AGENTS.md`
+
+Si `AGENTS.md` es el mecanismo elegido, sigue la [guía oficial del formato](https://agents.md/) y los criterios de [Instrucciones persistentes del proyecto](../../docs/instrucciones-persistentes.md#el-formato-agentsmd):
+
+1. **Comprueba si ya existen instrucciones.** Busca `AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md` u otros archivos equivalentes. Si existen, revísalos en lugar de crear uno paralelo.
+2. **Crea el archivo en la raíz del proyecto.** En un proyecto pequeño basta uno; los archivos anidados solo tienen sentido en subproyectos con necesidades distintas.
+3. **Redacta los temas recomendados** a partir de las conclusiones de los ejercicios 1 a 3, sin añadir nada que no esté respaldado por un archivo o una salida:
+   - descripción del proyecto en pocas líneas, remitiendo al README para la estructura;
+   - comandos de instalación, pruebas, lint, formato y tipos, copiados de la línea base;
+   - convenciones de código confirmadas;
+   - instrucciones de pruebas: qué ejecutar, dónde se añaden pruebas nuevas y qué hacer si una prueba existente parece incorrecta;
+   - consideraciones de seguridad: archivos que no se deben leer ni modificar y tratamiento de secretos.
+4. **Añade los temas adicionales que necesite el proyecto**, como las convenciones de commits y pull requests o los límites de alcance para cambios no solicitados.
+5. **Revisa cada línea.** Debe ser concreta y verificable, y no repetir el README. Recuerda que el agente intentará ejecutar los comandos que aparezcan, así que deben funcionar.
+6. **Configura el resto de herramientas solo si hace falta.** Comprueba en su documentación oficial si leen `AGENTS.md` directamente. Si una no lo lee, añade su archivo propio remitiendo a `AGENTS.md` en lugar de copiar el contenido.
+7. **Comprueba que se carga** en una sesión nueva: pregunta por los comandos y los límites del proyecto o usa la función de la herramienta que muestra los archivos cargados, como `/context` en Claude Code. Registra el resultado.
+
+> **Si la herramienta no carga `AGENTS.md`.** Una forma fiable de comprobarlo es preguntar algo que solo esté en ese archivo, como si puede hacer commit al terminar. En GitHub Copilot para VS Code, las causas habituales son:
+>
+> - **La carpeta abierta no es la raíz del proyecto.** Copilot solo lee `AGENTS.md` en la raíz del workspace. Abre la carpeta del proyecto, no una carpeta superior.
+> - **El workspace está en modo restringido.** Si VS Code no confía en la carpeta, desactiva Git y no carga las instrucciones del workspace. Ocurre a menudo con carpetas nuevas o sincronizadas, como las de OneDrive. Ejecuta `Workspaces: Manage Workspace Trust`, marca la carpeta como de confianza y recarga la ventana.
+> - **La conversación es anterior al archivo o la sesión no es local.** Abre un chat nuevo, en una sesión local.
+>
+> Para comprobarlo, mira las referencias de la respuesta: `AGENTS.md` debe aparecer entre ellas. Si el asistente dice que la carpeta no es un repositorio Git cuando sí lo es, sospecha del modo restringido.
+
+El ejercicio 5 completa la validación con una tarea de planificación.
 
 ### 5. Validar la preparación sin cambiar código
 
@@ -134,4 +161,6 @@ No empieces pidiendo «mejora todo el proyecto». Empieza por entender qué exis
 
 - [GitHub Copilot: personalizar respuestas](https://docs.github.com/en/copilot/customizing-copilot)
 - [Claude Code: memoria e instrucciones del proyecto](https://code.claude.com/docs/en/memory)
+- [AGENTS.md: guía oficial del formato](https://agents.md/)
 - [AGENTS.md: repositorio del formato](https://github.com/agentsmd/agents.md)
+- [GitHub Copilot: instrucciones del repositorio, incluido AGENTS.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
