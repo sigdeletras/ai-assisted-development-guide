@@ -6,7 +6,7 @@ Está dirigida a desarrolladores con experiencia que empiezan a utilizar herrami
 
 ## Por dónde empezar
 
-1. Consulta **[Primeros pasos con asistentes de programación](01-primeros-pasos.md)**.
+1. Consulta **[Primeros pasos con asistentes de programación](docs/primeros-pasos.md)**.
 2. Elige una herramienta aprobada por tu empresa y sigue su guía oficial de inicio.
 3. Practica con tareas pequeñas: comprender código, investigar errores, escribir pruebas y proponer refactorizaciones.
 4. Revisa los cambios y ejecuta las comprobaciones del proyecto antes de aceptar el resultado.
