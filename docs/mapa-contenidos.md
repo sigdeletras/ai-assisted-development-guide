@@ -33,6 +33,7 @@ flowchart TB
 
 ### 1. Fundamentos del desarrollo asistido
 - [Primeros pasos](primeros-pasos.md)
+- [Glosario de términos](glosario.md)
 - [Laboratorio 01: primer contacto](../laboratorio/01-primer-contacto/README.md)
 - [Laboratorio 02: proyecto nuevo](../laboratorio/02-proyecto-nuevo/README.md)
 - [Laboratorio 05: desarrollo de una funcionalidad con IA](../laboratorio/05-desarrollo-funcionalidad-ia/README.md)
@@ -45,6 +46,7 @@ flowchart TB
 
 ### 3. Agentes, herramientas y automatización
 Agentes y subagentes, skills, hooks, MCP, permisos y delegación de tareas. No es necesario activar todos los mecanismos.
+- [Glosario de términos](glosario.md)
 - [Referencias de herramientas](referencias-herramientas.md)
 - [Laboratorio 04: configuración del entorno de IA](../laboratorio/04-configuracion-entorno-ia/README.md)
 - [Laboratorio 05: desarrollo de una funcionalidad con IA](../laboratorio/05-desarrollo-funcionalidad-ia/README.md)
@@ -52,6 +54,7 @@ Agentes y subagentes, skills, hooks, MCP, permisos y delegación de tareas. No e
 ### 4A. Ingeniería del software y calidad
 Pruebas, revisión de cambios, análisis estático, CI, *harness engineering* y *Spec-Driven Development*.
 - [Primeros pasos: flujo de revisión](primeros-pasos.md)
+- [Glosario de términos](glosario.md)
 - [Laboratorio 01](../laboratorio/01-primer-contacto/README.md)
 - [Laboratorio 02](../laboratorio/02-proyecto-nuevo/README.md)
 - [Laboratorio 03](../laboratorio/03-proyecto-existente/README.md)
@@ -60,6 +63,7 @@ Pruebas, revisión de cambios, análisis estático, CI, *harness engineering* y 
 ### 4B. Seguridad, privacidad y control de cambios
 Protección de datos y secretos, permisos mínimos, prompt injection, revisión humana y límites de autonomía.
 - [Seguridad y privacidad al programar con IA](seguridad-privacidad-ia.md)
+- [Glosario de términos](glosario.md)
 - [Primeros pasos: seguridad y responsabilidad](primeros-pasos.md)
 - [Referencias de herramientas](referencias-herramientas.md)
 - [Laboratorio 04](../laboratorio/04-configuracion-entorno-ia/README.md)
@@ -67,6 +71,7 @@ Protección de datos y secretos, permisos mínimos, prompt injection, revisión 
 
 ### 5. Gobierno, evaluación y mejora continua
 - [Criterios de la guía](../README.md#principios)
+- [Glosario de términos](glosario.md)
 - [Referencias de herramientas](referencias-herramientas.md)
 - [Laboratorio: recorrido completo](../laboratorio/README.md)
 
