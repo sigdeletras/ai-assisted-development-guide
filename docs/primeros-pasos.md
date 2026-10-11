@@ -15,6 +15,26 @@ Si buscas enlaces de instalación y documentación específicos de cada producto
 7. **Ejecuta las comprobaciones.** Lanza las pruebas y herramientas de calidad del proyecto. No des por correcto un cambio solo porque el asistente diga que ha terminado.
 8. **Itera con evidencia.** Si algo falla, comparte el error relevante y pide que explique la causa antes de aceptar otra modificación.
 
+El flujo resume el ciclo habitual. No impide volver a una etapa anterior si la revisión descubre requisitos incompletos o un enfoque inadecuado.
+
+```mermaid
+flowchart TD
+    A["Definir tarea y resultado esperado"]
+    B["Aportar contexto y restricciones"]
+    C["Pedir explicación o plan"]
+    D["Revisar el plan y los criterios"]
+    E["Implementar un cambio acotado"]
+    F["Revisar el diff"]
+    G["Ejecutar pruebas y comprobaciones"]
+    H{"¿Se cumplen los criterios?"}
+    I["Aceptar el cambio"]
+    J["Analizar los fallos y corregir"]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+    H -- "Sí" --> I
+    H -- "No" --> J --> F
+```
+
 ## Qué tareas conviene probar primero
 
 Empieza por actividades de bajo riesgo que permitan comprobar fácilmente el resultado:
