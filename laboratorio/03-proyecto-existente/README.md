@@ -39,7 +39,7 @@ Ejecuta los comandos disponibles antes de realizar cambios:
 - pruebas automatizadas;
 - linters, formateadores, análisis estático o compilación que ya utilice el proyecto.
 
-Registra los comandos exactos, el resultado observado y el entorno en que se ejecutaron. Para este proyecto de práctica, comprueba como mínimo el estado de Git y ejecuta las pruebas con el comando que documente el proyecto (por ejemplo, `python -m pytest`, si pytest está instalado). Si una orden falla, conserva el error relevante y explica si se debe a una regresión, al entorno o a una configuración ausente; no lo clasifiques sin evidencia. Distingue entre pruebas ejecutadas, no ejecutadas y no disponibles. No añadas dependencias ni cambies la configuración solo para conseguir una ejecución limpia.
+Registra los comandos exactos, el resultado observado y el entorno en que se ejecutaron. Para este proyecto de práctica, comprueba como mínimo el estado de Git y ejecuta las pruebas y las comprobaciones de calidad con los comandos que documente el proyecto (por ejemplo, `python -m pytest`, `python -m ruff check .`, `python -m ruff format --check .` y `python -m mypy`, si las herramientas están instaladas). Si una orden falla, conserva el error relevante y explica si se debe a una regresión, al entorno o a una configuración ausente; no lo clasifiques sin evidencia. Distingue entre pruebas ejecutadas, no ejecutadas y no disponibles. No añadas dependencias ni cambies la configuración solo para conseguir una ejecución limpia.
 
 ### 3. Convenciones, riesgos y límites
 

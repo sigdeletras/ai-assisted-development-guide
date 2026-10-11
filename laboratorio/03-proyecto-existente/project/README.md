@@ -15,16 +15,37 @@ Las coordenadas siguen el orden GeoJSON `[longitude, latitude]`.
 
 - Python 3.11 o posterior.
 
-## Instalación y pruebas
+## Instalación
 
-Desde este directorio:
+Desde este directorio, instala las herramientas de desarrollo (pytest, Ruff y mypy):
 
 ```bash
-python -m pip install pytest
+python -m pip install -e ".[dev]"
+```
+
+Los grupos `test` y `lint` de `pyproject.toml` permiten instalar solo una parte.
+
+## Pruebas
+
+```bash
 python -m pytest
 ```
 
-La configuración de pytest está en `pyproject.toml` (`testpaths = ["tests"]`, `pythonpath = ["src"]`), por lo que no es necesario instalar el paquete para ejecutar las pruebas.
+La configuración de pytest está en `pyproject.toml` (`testpaths = ["tests"]`, `pythonpath = ["src"]`), por lo que las pruebas también se pueden ejecutar sin instalar el paquete, con solo `python -m pip install pytest`.
+
+## Calidad del código
+
+```bash
+python -m ruff check .
+python -m ruff format --check .
+python -m mypy
+```
+
+- `ruff check`: linter (errores, imports, modernización de sintaxis y posibles bugs).
+- `ruff format --check`: comprueba el formato sin modificar archivos; `ruff format .` lo aplica.
+- `mypy`: comprobación estática de tipos en modo estricto sobre `src/` y `tests/`.
+
+La configuración de las tres herramientas está en `pyproject.toml`.
 
 ## Estado
 
