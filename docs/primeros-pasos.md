@@ -30,13 +30,15 @@ Evita empezar con peticiones amplias como «reescribe el proyecto» o «mejora t
 
 ## Practicar con código
 
-El [laboratorio de desarrollo asistido por IA](../laboratorio/README.md) contiene tres etapas progresivas:
+Los ejercicios deben aparecer en la sección de la guía que explica la práctica correspondiente. Desde allí se enlazará al proyecto del laboratorio que permite aplicarla, evitando duplicar las instrucciones y manteniendo las referencias de producto separadas.
 
-1. Primer contacto con chat, autocompletado y cambios pequeños en Python.
-2. Creación de un proyecto nuevo a partir de requisitos.
-3. Incorporación de IA a un proyecto existente.
+El [laboratorio de desarrollo asistido por IA](../laboratorio/README.md) contiene tres proyectos progresivos:
 
-El primer ejercicio utiliza un ejemplo geográfico mínimo con coordenadas y GeoJSON. Aunque Python sea el lenguaje de partida, el método se puede aplicar a otros lenguajes.
+1. **Primer contacto:** practicar comprensión de código, chat, autocompletado, cambios pequeños y pruebas en [01 · Primer contacto](../laboratorio/01-primer-contacto/README.md).
+2. **Proyecto nuevo:** transformar requisitos en una implementación incremental con pruebas en [02 · Crear un proyecto nuevo](../laboratorio/02-proyecto-nuevo/README.md).
+3. **Proyecto existente:** explorar un repositorio, añadir pruebas de caracterización y modificarlo con seguridad en [03 · Incorporar IA a un proyecto existente](../laboratorio/03-proyecto-existente/README.md).
+
+El primer proyecto utiliza un ejemplo geográfico mínimo con coordenadas y GeoJSON. Aunque Python sea el lenguaje de partida, el método se puede aplicar a otros lenguajes.
 
 ## Cuándo configurar el entorno
 
