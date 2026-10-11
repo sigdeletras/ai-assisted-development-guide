@@ -6,9 +6,9 @@ Está dirigida a desarrolladores con experiencia que empiezan a utilizar herrami
 
 ## Por dónde empezar
 
-1. Consulta **[Primeros pasos con asistentes de programación](docs/primeros-pasos.md)**.
-2. Practica las técnicas con el **[laboratorio de desarrollo asistido por IA](laboratorio/README.md)**.
-3. Elige una herramienta aprobada por tu empresa y sigue su guía oficial de inicio.
+1. Lee **[Primeros pasos con asistentes de programación](docs/primeros-pasos.md)** para aprender un flujo de trabajo inicial.
+2. Consulta las **[referencias de herramientas y documentación](docs/referencias-herramientas.md)** para encontrar documentación oficial de cada producto.
+3. Practica con el **[laboratorio de desarrollo asistido por IA](laboratorio/README.md)**.
 4. Empieza con tareas pequeñas: comprender código, investigar errores, escribir pruebas y proponer refactorizaciones.
 5. Revisa los cambios y ejecuta las comprobaciones del proyecto antes de aceptar el resultado.
 
