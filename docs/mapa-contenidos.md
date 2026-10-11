@@ -39,15 +39,17 @@ flowchart TB
 - [Laboratorio 05: desarrollo de una funcionalidad con IA](../laboratorio/05-desarrollo-funcionalidad-ia/README.md)
 
 ### 2. Contexto e instrucciones
-- [Referencias de herramientas](referencias-herramientas.md)
+- [Herramientas de desarrollo asistido por IA](herramientas-desarrollo-ia.md)
+- [Referencias de herramientas y documentación](referencias-herramientas.md)
 - [Diseño de ejercicios](estructura-ejercicios.md)
 - [Laboratorio 03: proyecto existente](../laboratorio/03-proyecto-existente/README.md)
 - [Laboratorio 04: configuración del entorno de IA](../laboratorio/04-configuracion-entorno-ia/README.md)
 
 ### 3. Agentes, herramientas y automatización
 Agentes y subagentes, skills, hooks, MCP, permisos y delegación de tareas. No es necesario activar todos los mecanismos.
+- [Herramientas de desarrollo asistido por IA](herramientas-desarrollo-ia.md): categorías y selección de ejemplos representativos.
 - [Glosario de términos](glosario.md)
-- [Referencias de herramientas](referencias-herramientas.md)
+- [Referencias de herramientas y documentación](referencias-herramientas.md)
 - [Laboratorio 04: configuración del entorno de IA](../laboratorio/04-configuracion-entorno-ia/README.md)
 - [Laboratorio 05: desarrollo de una funcionalidad con IA](../laboratorio/05-desarrollo-funcionalidad-ia/README.md)
 
@@ -90,6 +92,7 @@ Los laboratorios pueden recorrerse de forma progresiva o consultarse por necesid
 ## Cómo está organizada la documentación
 - **Guía:** conceptos, criterios de decisión y riesgos.
 - **Laboratorio:** ejercicios y proyectos con resultados verificables.
+- **Herramientas de desarrollo asistido por IA:** índice orientativo por categorías.
 - **Referencias de herramientas:** enlaces oficiales específicos de cada proveedor.
 
 El estado de desarrollo de nuevos contenidos se debe gestionar como trabajo editorial, no como una lista de tareas dentro de este índice.
