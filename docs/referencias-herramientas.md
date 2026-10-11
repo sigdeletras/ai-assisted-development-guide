@@ -2,7 +2,7 @@
 
 Este documento reúne los puntos de entrada oficiales para aprender a utilizar asistentes de programación concretos. No sustituye la guía metodológica: las herramientas cambian, mientras que las prácticas de especificación, revisión y verificación son transferibles.
 
-Para una visión rápida de las categorías y de una selección representativa de productos, consulta el [índice de herramientas de desarrollo asistido por IA](herramientas-desarrollo-ia.md).
+Para una visión rápida de las categorías y de una selección representativa de productos, consulta el [índice de herramientas de desarrollo asistido por IA](herramientas-desarrollo-ia.md). Para conocer las principales familias de modelos y distinguir entre modelos propietarios, pesos abiertos y código abierto para IA, consulta [LLM: familias de modelos, distribución y criterios de selección](referencias-llm.md).
 
 Comprueba la documentación del proveedor antes de seguir instrucciones de instalación o configuración, ya que las funciones disponibles pueden depender de la versión, el plan y las políticas de la organización.
 
