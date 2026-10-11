@@ -2,6 +2,8 @@
 
 Esta guía está pensada para desarrolladores con experiencia que empiezan a utilizar las suscripciones de IA disponibles en su empresa. El objetivo inicial no es configurar un entorno avanzado, sino incorporar estas herramientas a tareas reales y aprender a verificar sus resultados.
 
+Para practicar estas técnicas con código, consulta el **[laboratorio de desarrollo asistido por IA](../laboratorio/README.md)**. El primer ejercicio utiliza un pequeño ejemplo de puntos geográficos y GeoJSON.
+
 ## Cómo empezar
 
 1. Elige una herramienta que ya tengas autorizada por tu empresa.
