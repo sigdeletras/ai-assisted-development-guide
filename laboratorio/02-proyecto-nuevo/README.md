@@ -8,6 +8,10 @@ Practicar el desarrollo asistido por IA desde requisitos iniciales hasta una apl
 
 Construye una API REST para gestionar puntos de interés geográficos. Cada punto tendrá identificador, nombre, categoría y coordenadas. La API deberá devolver datos GeoJSON cuando proceda.
 
+## Espacio de trabajo
+
+Crea el proyecto en un directorio nuevo fuera del repositorio de la guía, inicializa allí su propio repositorio Git y ábrelo como espacio de trabajo del asistente. Este README contiene las instrucciones del ejercicio: proporciónaselas al asistente como contexto, pero el proyecto debe tener su propio README. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
+
 ## Etapas sugeridas
 
 1. **Definir alcance:** pide al asistente que convierta el enunciado en requisitos y criterios de aceptación. Aclara qué queda fuera de la primera versión.

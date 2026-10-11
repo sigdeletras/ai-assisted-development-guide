@@ -8,7 +8,8 @@ El objetivo no es conseguir que la IA escriba mucho código, sino completar un c
 
 ## Preparación
 
-- Utiliza el proyecto de práctica de los laboratorios anteriores o un repositorio propio autorizado y no confidencial.
+- Utiliza la copia del proyecto de práctica de los laboratorios anteriores o un repositorio propio autorizado y no confidencial.
+- Abre ese proyecto como espacio de trabajo del asistente, no la raíz de la guía. Proporciónale estas instrucciones explícitamente cuando las necesite. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
 - Comprueba que el estado de Git está limpio o que cualquier cambio previo está identificado y protegido.
 - Verifica que las pruebas de la línea base siguen pasando.
 - Comprueba qué instrucciones y mecanismos de configuración aplican a la tarea.
@@ -16,6 +17,20 @@ El objetivo no es conseguir que la IA escriba mucho código, sino completar un c
 - No utilices credenciales reales, datos de clientes ni servicios de producción.
 
 Si todavía no existe una propuesta concreta, elige una mejora pequeña del proyecto y pide a la IA que proponga alternativas. La persona responsable debe elegir el alcance final.
+
+### Caso de práctica: incidencia del proyecto del laboratorio 03
+
+El proyecto de práctica incluye una incidencia abierta en `docs/incidencia.md`: validar nombres y coordenadas de `build_feature`. Si la utilizas, aplica el método de este laboratorio con estas indicaciones:
+
+1. Registra `git status --short --branch` y ejecuta las pruebas existentes. Guarda comandos, salidas y limitaciones como línea base; no afirmes que la línea base pasa hasta haber ejecutado las pruebas.
+2. Pide al asistente que explique la función y sus riesgos, sin modificar archivos. Contrasta la explicación con el código.
+3. Añade en `tests/test_regression.py` pruebas que expresen los criterios de la incidencia. Incluye casos normales, límites, entradas inválidas y la prioridad del argumento `name`.
+4. Mantén diferenciados los dos tipos de prueba: las de caracterización describen el comportamiento previo; las de regresión verifican el comportamiento requerido. Si una prueba existente codifica el defecto, actualízala cuando el requisito nuevo lo contradiga, dejando clara la razón.
+5. Decide explícitamente qué excepción debe producirse para cada entrada inválida y documenta esa decisión en las pruebas.
+6. Solicita un plan pequeño que indique archivos afectados, cambios previstos y pruebas; revísalo y confírmalo antes de permitir ediciones de implementación.
+7. Implementa solo lo necesario para resolver la incidencia. No amplíes el alcance con una refactorización general.
+8. Ejecuta las pruebas pertinentes y el conjunto completo; registra la salida real y revisa `git diff` y el estado de Git.
+9. En el cierre, relaciona cada criterio de aceptación con la prueba o evidencia que lo verifica e indica explícitamente las comprobaciones no ejecutadas.
 
 ## Control previo: ¿qué información se puede compartir?
 

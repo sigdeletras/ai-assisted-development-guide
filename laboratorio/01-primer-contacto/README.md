@@ -6,7 +6,9 @@ Practicar chat, autocompletado y edición puntual en un script Python pequeño, 
 
 ## Punto de partida
 
-El módulo `src/pois.py` contiene una función para construir una entidad GeoJSON de tipo `Point`. No utiliza librerías externas.
+El proyecto está en [`project/`](project/README.md). Su módulo `src/pois.py` contiene una función para construir una entidad GeoJSON de tipo `Point`. No utiliza librerías externas.
+
+Abre `project/` como espacio de trabajo del asistente, no esta carpeta ni la raíz de la guía. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
 
 ## Ejercicios
 
@@ -16,8 +18,8 @@ Pide al asistente que explique:
 
 - qué argumentos recibe la función;
 - en qué orden se guardan las coordenadas en GeoJSON;
-- qué casos no valida todavía;
-- qué pruebas convendría añadir.
+- qué validaciones realiza y qué entradas podrían quedar sin cubrir (por ejemplo, un nombre que no sea texto);
+- qué comportamiento verifican las pruebas existentes.
 
 Pídele que no modifique archivos en esta primera interacción. Contrasta la explicación con el código y la especificación de [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946).
 
@@ -27,24 +29,26 @@ Escribe tú una pequeña función o prueba y utiliza el autocompletado para comp
 
 ### C. Encargar una tarea acotada
 
-Solicita implementar validación de longitud y latitud. Antes de aceptar el cambio, acuerda estos criterios:
+Solicita una función `crear_coleccion(puntos)` que agrupe varios puntos en una `FeatureCollection` ([RFC 7946, sección 3.3](https://www.rfc-editor.org/rfc/rfc7946#section-3.3)). Antes de aceptar el cambio, acuerda estos criterios:
 
-- longitud entre -180 y 180, ambos incluidos;
-- latitud entre -90 y 90, ambos incluidos;
-- rechazar valores fuera de rango y coordenadas no finitas;
-- mantener el orden GeoJSON `[longitud, latitud]`;
-- añadir pruebas para valores válidos y casos límite.
+- devuelve `{"type": "FeatureCollection", "features": [...]}` con los puntos en el orden recibido;
+- una lista vacía produce una colección válida sin entidades;
+- no modifica las entidades recibidas;
+- rechaza elementos que no sean entidades `Feature`; decide qué excepción se produce y documéntalo en las pruebas;
+- reutiliza `crear_punto` en las pruebas en lugar de duplicar la construcción de entidades;
+- no cambia el comportamiento de `crear_punto`;
+- añade pruebas para casos normales, lista vacía y entradas inválidas.
 
 ### D. Verificación
 
-Instala pytest si aún no está disponible y ejecuta desde esta carpeta:
+Instala pytest si aún no está disponible y ejecuta desde `project/`:
 
 ```bash
 python -m pip install pytest
 python -m pytest
 ```
 
-Revisa los cambios con `git diff`. Si una prueba falla, pide al asistente que explique el fallo antes de aceptar una corrección.
+Revisa los cambios con `git diff -- .` desde `project/`. Si una prueba falla, pide al asistente que explique el fallo antes de aceptar una corrección.
 
 ## Criterios de finalización
 

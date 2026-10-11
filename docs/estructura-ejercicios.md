@@ -6,7 +6,7 @@ Este documento define el patrón editorial para conectar los conceptos de la gu�
 
 - El apartado de la guía explica el concepto, cuándo aplicarlo, sus límites y las precauciones relevantes.
 - El bloque de ejercicio propone una práctica breve vinculada al concepto explicado.
-- El laboratorio contiene el proyecto, los pasos operativos y el código necesario para realizar la práctica.
+- El laboratorio contiene el proyecto, los pasos operativos y el código necesario para realizar la práctica. Dentro de cada laboratorio, el README describe el ejercicio y la subcarpeta `project/` contiene el proyecto de trabajo (consulta [Estructura de un laboratorio](#estructura-de-un-laboratorio)).
 - Evita duplicar en la guía los pasos detallados que ya están documentados en el laboratorio.
 - No todos los apartados necesitan un ejercicio. En contenidos puramente descriptivos o de referencia, no fuerces una actividad artificial.
 - Si todavía no existe un escenario adecuado en el laboratorio, registra la necesidad como pendiente; no inventes un enlace ni des por creado el ejercicio.
@@ -34,6 +34,17 @@ Adapta el enlace a la ubicación real del documento y al proyecto más adecuado.
 - **Tarea:** resume qué se hará sin copiar todas las instrucciones del laboratorio.
 - **Criterio de éxito:** define una condición concreta y observable.
 - **Verificación:** explica cómo comprobar el resultado; puede integrarse en el criterio de éxito si el ejercicio es muy sencillo.
+
+## Estructura de un laboratorio
+
+Cada laboratorio separa el ejercicio del proyecto sobre el que se trabaja:
+
+- `laboratorio/NN-nombre/README.md`: objetivos, instrucciones, criterios de evaluación y referencias del ejercicio. Es documentación de la guía.
+- `laboratorio/NN-nombre/project/`: código, configuración, README propio, pruebas y dependencias del proyecto. Es el espacio de trabajo del asistente.
+
+El README de `project/` describe el proyecto como lo haría un repositorio real: propósito, estructura, instalación y pruebas. No incluye instrucciones del ejercicio ni referencias al laboratorio. Del mismo modo, los archivos del proyecto (código, comentarios, incidencias) no deben dirigirse a quien realiza el ejercicio.
+
+Si un laboratorio no necesita código propio, no crees `project/`; indica en el README qué proyecto se utiliza o dónde debe crearse. El procedimiento para aislar el espacio de trabajo está en el [laboratorio](../laboratorio/README.md#aislamiento-del-espacio-de-trabajo).
 
 ## Flujo para desarrollar o actualizar un apartado
 

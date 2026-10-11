@@ -11,8 +11,8 @@ def build_feature(
 ) -> dict[str, Any]:
     """Construye una entidad GeoJSON Point.
 
-    La función conserva el comportamiento inicial del proyecto. La validación
-    de nombres y coordenadas es una mejora propuesta en la incidencia del lab.
+    La función no valida nombres ni coordenadas. La validación está pendiente;
+    consulta docs/incidencia.md.
     """
     feature_properties: dict[str, Any] = {"name": name}
     if properties:

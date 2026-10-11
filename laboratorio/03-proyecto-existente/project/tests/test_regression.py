@@ -1,6 +1,5 @@
-"""Casos adicionales que se incorporarán durante el ejercicio.
+"""Pruebas de regresión para la incidencia descrita en docs/incidencia.md.
 
-Añade aquí pruebas para la incidencia descrita en docs/incidencia.md.
-Estas pruebas están intencionadamente pendientes: el objetivo es que el
-participante acuerde el comportamiento esperado antes de implementar cambios.
+Pendiente: añadir casos que expresen el comportamiento acordado en los
+criterios de aceptación antes de modificar la implementación.
 """

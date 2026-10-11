@@ -8,7 +8,9 @@ El laboratorio se centra en **comprender y configurar antes de delegar cambios**
 
 ## Proyecto de práctica
 
-- Utiliza una copia de un proyecto propio no confidencial o el repositorio de práctica.
+- Utiliza una copia de un proyecto propio no confidencial o el proyecto de práctica incluido en [`project/`](project/README.md).
+- Trabaja en una copia independiente del proyecto, con su propio repositorio Git, y ábrela como espacio de trabajo del asistente. Sigue el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo); este README contiene las instrucciones del ejercicio, no la documentación del proyecto.
+- Utiliza la misma copia en los laboratorios 04 y 05.
 - Comprueba las políticas de la organización antes de enviar código a un servicio de IA.
 - No incluyas credenciales, datos personales, secretos ni información contractual.
 - Trabaja con Git y registra el estado inicial. No sobrescribas cambios preexistentes.

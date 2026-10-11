@@ -9,7 +9,8 @@ Al terminar, el repositorio tendrá una configuración **mínima, explicada y pr
 ## Preparación
 
 - Completa primero el [laboratorio 03](../03-proyecto-existente/README.md), o realiza un diagnóstico equivalente.
-- Utiliza el proyecto de práctica o un repositorio propio autorizado y no confidencial.
+- Utiliza la copia del proyecto de práctica preparada en el laboratorio 03 o un repositorio propio autorizado y no confidencial.
+- Abre ese proyecto como espacio de trabajo del asistente y crea allí los archivos de configuración, nunca en la raíz de la guía. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
 - Elige una herramienta principal y, si procede, una segunda herramienta con la que quieras compartir instrucciones.
 - Comprueba la documentación oficial vigente y las políticas de tu organización.
 - Revisa el estado de Git antes de empezar y trabaja en una rama de ejercicio.
