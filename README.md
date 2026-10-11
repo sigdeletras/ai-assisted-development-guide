@@ -25,6 +25,8 @@ Está dirigida a desarrolladores con experiencia que empiezan a utilizar herrami
 
 Estos temas se añadirán cuando aporten valor práctico; no es necesario configurar todos desde el principio.
 
+El [mapa de contenidos](docs/mapa-contenidos.md) organiza estos temas en cinco módulos y distingue los documentos existentes de los contenidos pendientes.
+
 La convención para diseñar ejercicios y vincularlos con proyectos del laboratorio está documentada en [Diseño de ejercicios de la guía](docs/estructura-ejercicios.md).
 
 ## Criterios de la guía
