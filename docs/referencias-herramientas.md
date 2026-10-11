@@ -15,7 +15,10 @@ Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en l
 
 ## Equivalencias orientativas
 
-Los nombres y mecanismos no son idénticos entre herramientas. La tabla permite localizar el concepto relacionado; no implica que los archivos, el alcance o el comportamiento sean intercambiables.
+- **Documentación:** [Claude Code overview](https://code.claude.com/docs/en/overview).
+- **Inicio rápido:** [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
+- **Buenas prácticas:** [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices). Describe flujos de exploración, planificación, implementación y verificación, así como el uso de instrucciones persistentes.
+- **Privacidad y seguridad:** [Data usage](https://code.claude.com/docs/en/data-usage) y [Security](https://code.claude.com/docs/en/security).
 
 | Concepto común | GitHub Copilot | Claude Code | Cursor | OpenAI Codex |
 | --- | --- | --- | --- | --- |
@@ -25,11 +28,34 @@ Los nombres y mecanismos no son idénticos entre herramientas. La tabla permite 
 | Automatización por eventos (*hooks*) | Disponible en CLI y determinados entornos/plugins | Hooks configurados en los ajustes de Claude Code | Hooks según configuración de agente y plugins | Disponible en determinados entornos |
 | Herramientas externas (MCP) | Servidores MCP, según cliente | Servidores MCP configurables por ámbito | Servidores MCP desde configuración o archivos de proyecto | Servidores MCP desde configuración o plugins |
 
-**Importante:** las equivalencias son conceptuales, no compatibilidad automática. La disponibilidad y el alcance pueden variar según modalidad, versión y configuración. Antes de reutilizar archivos o copiar una configuración, comprueba la documentación oficial del producto y entorno concretos.
+- **Documentación:** [Cursor Docs](https://cursor.com/docs).
+- **Inicio rápido:** [Cursor Quickstart](https://cursor.com/docs/get-started/quickstart).
+- **Primer proyecto:** [Your first project](https://prod.cursor.com/help/getting-started/first-project).
+- **Privacidad y datos:** [Data Use & Privacy Overview](https://cursor.com/es/data-use) y [Privacy and data](https://prod.cursor.com/help/security-and-privacy/privacy). Revisa el estado de Privacy Mode, el modelo seleccionado y las excepciones indicadas por el proveedor.
 
 ## Dónde ampliar información
 
-- [Primeros pasos](primeros-pasos.md): flujo inicial y verificación.
-- [Mapa de contenidos](mapa-contenidos.md): conceptos, metodologías y criterios de decisión.
-- [Laboratorios](../laboratorio/README.md): ejercicios prácticos.
-- [Seguridad y trabajo pendiente](../ROADMAP.md): criterios generales y propuestas de evolución.
+Codex ofrece distintos puntos de entrada, entre ellos CLI, extensión para IDE, aplicación y versión web. Utiliza el cliente disponible y autorizado en tu entorno.
+
+- **Acceso con un plan de ChatGPT:** [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan).
+- **Recursos para desarrolladores:** [Codex — OpenAI Developers](https://developers.openai.com/learn/codex).
+- **CLI:** [Repositorio oficial de Codex CLI](https://github.com/openai/codex).
+- **Privacidad y datos:** [Controles de datos de la plataforma API](https://developers.openai.com/api/docs/guides/your-data) y [controles de datos de ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-faq). No asumas que las condiciones de la API, ChatGPT y los distintos clientes de Codex son idénticas.
+
+## Criterios para usar estas referencias
+
+- Prioriza la documentación oficial para instalación, configuración, permisos, privacidad y capacidades.
+- Distingue las características generales de los asistentes de las funciones específicas de cada producto.
+- Comprueba qué datos se procesan, qué permisos recibe la herramienta y qué políticas de retención o privacidad se aplican.
+- No confundas la exclusión del entrenamiento con la retención cero de datos (ZDR).
+- No deduzcas las condiciones de privacidad a partir de que un plan sea gratuito o de pago; verifica el producto, plan, función y modelo concretos.
+- No compartas credenciales, datos de clientes ni información confidencial sin autorización explícita y sin verificar las condiciones aplicables.
+- Para un criterio transversal, consulta [Seguridad y privacidad al programar con IA](seguridad-privacidad-ia.md).
+
+## Relación con el resto de la guía
+
+- [Primeros pasos con asistentes de programación](primeros-pasos.md): metodología inicial y orientación para practicar.
+- [Seguridad y privacidad al programar con IA](seguridad-privacidad-ia.md): criterios de clasificación, tratamiento de datos, retención y permisos.
+- [Laboratorio práctico](../laboratorio/README.md): proyectos y ejercicios para aplicar los métodos de la guía.
+
+Los ejercicios se describen junto a los conceptos y prácticas que enseñan. Este documento se limita a reunir referencias de producto; no define ejercicios independientes.
