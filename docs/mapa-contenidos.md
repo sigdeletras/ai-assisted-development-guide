@@ -16,20 +16,6 @@ flowchart TB
     M1 --> M2 --> M3 --> M4A
     M4A --- M4B
     M4B --> M5
-
-    classDef fundamentos fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef contexto fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef agentes fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef ingenieria fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef seguridad fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef gobierno fill:#f3e8ff,stroke:#a21caf,color:#701a75
-
-    class M1 fundamentos
-    class M2 contexto
-    class M3 agentes
-    class M4A ingenieria
-    class M4B seguridad
-    class M5 gobierno
 ```
 
 ## Módulos
@@ -55,14 +41,14 @@ Cómo proporcionar contexto relevante y cuándo utilizar instrucciones persisten
 Agentes y subagentes, skills, hooks, MCP, permisos y delegación de tareas. Estos mecanismos resuelven necesidades distintas; no es necesario activarlos todos.
 
 - [Referencias de herramientas](referencias-herramientas.md)
-- [Laboratorio](../laboratorio/README.md)
+- [Laboratorios](../laboratorio/README.md)
 
 ### 4A. Ingeniería del software y calidad
 
 Pruebas, revisión de cambios, análisis estático, CI, *harness engineering* y *Spec-Driven Development*.
 
 - [Primeros pasos: flujo de revisión](primeros-pasos.md)
-- [Laboratorio](../laboratorio/README.md)
+- [Laboratorios](../laboratorio/README.md)
 
 ### 4B. Seguridad, privacidad y control de cambios
 
@@ -75,7 +61,7 @@ Protección de datos y secretos, permisos mínimos, prompt injection, revisión 
 
 Selección de herramientas, calidad, coste, privacidad, políticas de uso, métricas y mantenimiento de las prácticas.
 
-- [Criterios de la guía](../README.md#principios)
+- [Roadmap y trabajo pendiente](../ROADMAP.md)
 - [Referencias de herramientas](referencias-herramientas.md)
 
 ## Cómo está organizada la documentación
@@ -83,5 +69,4 @@ Selección de herramientas, calidad, coste, privacidad, políticas de uso, métr
 - **Guía:** explica conceptos, criterios de decisión y riesgos.
 - **Laboratorio:** permite practicar con proyectos y resultados verificables.
 - **Referencias de herramientas:** agrupa los enlaces oficiales específicos de cada proveedor.
-
-El estado de desarrollo de nuevos contenidos se debe gestionar como trabajo editorial, no como una lista de tareas dentro de este índice. Los ejercicios se enlazan desde los conceptos que permiten practicar.
+- **Roadmap:** registra propuestas y contenidos pendientes, separados de la guía consolidada.
