@@ -19,6 +19,7 @@ Las denominaciones y los mecanismos concretos pueden variar entre herramientas y
 | **Context Window** — Ventana de contexto | Cantidad máxima de tokens que un modelo puede procesar dentro de una interacción según los límites aplicables. No debe confundirse con la memoria persistente del proyecto. |
 | **Hallucination** — Alucinación | Respuesta incorrecta, inventada o no respaldada por evidencias que el modelo presenta como plausible. En programación puede manifestarse en API inexistentes, dependencias incorrectas o explicaciones falsas. |
 | **Context Engineering** — Ingeniería del contexto | Diseño y gestión de la información, las instrucciones y los recursos que recibe el modelo para mejorar la calidad, la pertinencia y la fiabilidad de sus resultados. |
+| **Reasoning Effort** — Esfuerzo de razonamiento | Parámetro disponible en algunos modelos o herramientas que permite ajustar los recursos dedicados al razonamiento. Puede afectar a la profundidad del análisis, la latencia y el consumo de tokens; los valores y sus efectos dependen del modelo y del proveedor. |
 
 ## 2. Asistentes, agentes y herramientas
 
@@ -27,9 +28,11 @@ Las denominaciones y los mecanismos concretos pueden variar entre herramientas y
 | **AI Coding Assistant** — Asistente de programación con IA | Herramienta que ayuda a comprender, escribir, modificar, documentar o probar código. Puede funcionar mediante chat, autocompletado o edición integrada en el entorno de desarrollo. |
 | **Agent** — Agente | Sistema que utiliza un modelo para perseguir un objetivo mediante un ciclo de interpretación, planificación, uso de herramientas y evaluación de resultados. Su autonomía depende de las capacidades y permisos disponibles. |
 | **Subagent** — Subagente | Agente delegado para realizar una tarea específica dentro de un trabajo más amplio. Puede disponer de instrucciones, contexto y herramientas delimitados. |
+| **Multi-Agent System** — Sistema multiagente | Sistema en el que varios agentes colaboran o se reparten tareas para alcanzar un objetivo. La coordinación puede ser centralizada o distribuida y requiere gestionar dependencias, intercambio de resultados, contexto, conflictos y validación. |
 | **Agentic Coding** — Programación agéntica | Forma de desarrollo en la que un agente puede realizar varios pasos de trabajo, utilizar herramientas y modificar código para alcanzar un objetivo, dentro de los límites establecidos. |
 | **IDE (Integrated Development Environment)** — Entorno de desarrollo integrado | Aplicación que reúne herramientas para editar, ejecutar y depurar código. Algunos IDE incorporan asistentes y agentes de IA. |
 | **CLI (Command-Line Interface)** — Interfaz de línea de comandos | Interfaz que permite interactuar con una herramienta mediante comandos de texto. Algunos agentes de programación pueden ejecutarse desde una CLI. |
+| **Git Worktree** — Árbol de trabajo de Git | Mecanismo de Git para mantener varios directorios de trabajo vinculados al mismo repositorio, normalmente asociados a ramas o revisiones distintas. Permite trabajar en tareas paralelas sin tener que cambiar continuamente de rama en un único directorio. |
 | **Tool Calling** — Llamada a herramientas | Capacidad del modelo para solicitar la ejecución de una herramienta disponible, como consultar archivos, ejecutar pruebas o llamar a una API. La ejecución efectiva depende del sistema que la controla. |
 | **Human-in-the-Loop (HITL)** — Intervención humana | Enfoque en el que una persona supervisa, valida o autoriza decisiones y acciones relevantes del sistema de IA. |
 
