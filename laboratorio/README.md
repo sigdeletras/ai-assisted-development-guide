@@ -6,7 +6,10 @@ Este laboratorio acompaña a la guía conceptual con ejercicios pequeños y veri
 
 1. **[01 · Primer contacto](01-primer-contacto/README.md)**: practicar chat, autocompletado y cambios pequeños sobre un script existente.
 2. **[02 · Proyecto nuevo](02-proyecto-nuevo/README.md)**: convertir requisitos en un proyecto estructurado, con pruebas y una API REST.
-3. **[03 · Proyecto existente](03-proyecto-existente/README.md)**: aprender a explorar y modificar un repositorio sin perder comportamiento ni introducir cambios innecesarios.
+3. **[03 · Proyecto existente](03-proyecto-existente/README.md)**: analizar un repositorio, establecer una línea base y decidir qué necesita para trabajar con IA.
+4. **[04 · Configuración del entorno de IA](04-configuracion-entorno-ia/README.md)**: crear y validar instrucciones, rules y skills, y evaluar agentes, hooks y permisos según las necesidades del proyecto.
+
+El laboratorio 03 se centra en el diagnóstico y la preparación. El laboratorio 04 parte de ese diagnóstico y se centra en implementar y validar la configuración seleccionada. No es obligatorio crear todos los tipos de archivo ni habilitar todas las capacidades.
 
 Los ejercicios describen resultados esperados, no una solución que haya que copiar literalmente. Usa el asistente autorizado por tu organización y compara sus propuestas con los criterios de aceptación.
 
