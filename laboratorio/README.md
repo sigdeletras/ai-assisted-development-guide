@@ -19,6 +19,8 @@ Los ejercicios describen resultados esperados, no una solución que haya que cop
 
 El primer ejercicio no necesita servicios externos ni dependencias de geografía: utiliza coordenadas y la estructura GeoJSON directamente. FastAPI y otras dependencias se introducirán cuando aporten valor.
 
+La guía define el objetivo de aprendizaje y enlaza al ejercicio pertinente. La plantilla editorial y el flujo para crear o revisar esos ejercicios están descritos en [Diseño de ejercicios de la guía](../docs/estructura-ejercicios.md).
+
 ## Método de trabajo
 
 Para cada tarea:
