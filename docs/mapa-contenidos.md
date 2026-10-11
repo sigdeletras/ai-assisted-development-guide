@@ -10,6 +10,41 @@ Este mapa organiza la guía en cinco módulos temáticos consultables. No define
 
 La guía debe explicar conceptos, criterios de decisión, límites y riesgos. Las instrucciones operativas y el código de práctica corresponden al [laboratorio](../laboratorio/README.md). Para diseñar ejercicios, aplica la convención de [Diseño de ejercicios de la guía](estructura-ejercicios.md).
 
+## Vista general de los módulos
+
+El diagrama resume la organización temática. Los colores distinguen los módulos; el módulo 4 se divide en ingeniería y calidad (4A) y seguridad y control de cambios (4B).
+
+```mermaid
+flowchart TB
+    M1["Módulo 1<br/>Fundamentos del desarrollo asistido"]
+    M2["Módulo 2<br/>Contexto e instrucciones"]
+    M3["Módulo 3<br/>Agentes, herramientas y automatización"]
+    subgraph M4["Módulo 4 · Ingeniería del software y seguridad"]
+        M4A["4A · Calidad y flujo de ingeniería"]
+        M4B["4B · Seguridad, privacidad y control de cambios"]
+    end
+    M5["Módulo 5<br/>Gobierno, evaluación y mejora continua"]
+
+    M1 --> M2 --> M3 --> M4A
+    M4A --- M4B
+    M4B --> M5
+
+    classDef fundamentos fill:#dbeafe,stroke:#2563eb,color:#1e3a8a,stroke-width:2px
+    classDef contexto fill:#dcfce7,stroke:#16a34a,color:#14532d,stroke-width:2px
+    classDef agentes fill:#fef3c7,stroke:#d97706,color:#78350f,stroke-width:2px
+    classDef ingenieria fill:#ede9fe,stroke:#7c3aed,color:#4c1d95,stroke-width:2px
+    classDef seguridad fill:#fee2e2,stroke:#dc2626,color:#7f1d1d,stroke-width:2px
+    classDef gobierno fill:#f3e8ff,stroke:#a21caf,color:#701a75,stroke-width:2px
+
+    class M1 fundamentos
+    class M2 contexto
+    class M3 agentes
+    class M4A ingenieria
+    class M4B seguridad
+    class M5 gobierno
+    style M4 fill:#faf5ff,stroke:#8b5cf6,color:#4c1d95,stroke-width:2px
+```
+
 ## Módulo 1. Fundamentos del desarrollo asistido
 
 **Objetivo:** aprender un flujo de trabajo fiable antes de configurar mecanismos avanzados.
