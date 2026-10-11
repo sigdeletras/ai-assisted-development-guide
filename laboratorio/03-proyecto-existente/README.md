@@ -17,6 +17,25 @@ Utiliza una copia de un proyecto propio no confidencial o un repositorio de prá
 5. **Verificación:** ejecuta pruebas y herramientas de calidad existentes; compara el diff con el alcance solicitado.
 6. **Instrucciones de proyecto:** cuando conozcas las convenciones reales, redacta instrucciones breves para el asistente. Evita reglas redundantes o instrucciones que no puedas comprobar.
 
+El orden importa: primero comprende el comportamiento existente y reduce la incertidumbre; después cambia una parte acotada y verifica que no has introducido regresiones.
+
+```mermaid
+flowchart TD
+    A["Explorar el repositorio sin modificarlo"]
+    B["Identificar riesgos y zonas sin pruebas"]
+    C["Añadir pruebas de caracterización"]
+    D["Definir un cambio acotado y sus criterios"]
+    E["Implementar el cambio"]
+    F["Revisar diff y ejecutar comprobaciones"]
+    G{"¿Se mantiene el comportamiento esperado?"}
+    H["Aceptar el cambio"]
+    I["Investigar la regresión y corregir"]
+
+    A --> B --> C --> D --> E --> F --> G
+    G -- "Sí" --> H
+    G -- "No" --> I --> E
+```
+
 ## Criterios de aceptación
 
 - No se han alterado archivos fuera del alcance sin una razón explicada.
