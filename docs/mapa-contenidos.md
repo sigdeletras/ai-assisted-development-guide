@@ -34,6 +34,7 @@ flowchart TB
 ### 1. Fundamentos del desarrollo asistido
 - [Primeros pasos](primeros-pasos.md)
 - [Glosario de términos](glosario.md)
+- [LLM: familias de modelos, distribución y criterios de selección](referencias-llm.md)
 - [Laboratorio 01: primer contacto](../laboratorio/01-primer-contacto/README.md)
 - [Laboratorio 02: proyecto nuevo](../laboratorio/02-proyecto-nuevo/README.md)
 - [Laboratorio 05: desarrollo de una funcionalidad con IA](../laboratorio/05-desarrollo-funcionalidad-ia/README.md)
@@ -75,6 +76,7 @@ Protección de datos y secretos, permisos mínimos, prompt injection, revisión 
 - [Criterios de la guía](../README.md#principios)
 - [Glosario de términos](glosario.md)
 - [Referencias de herramientas](referencias-herramientas.md)
+- [LLM: familias de modelos, distribución y criterios de selección](referencias-llm.md)
 - [Laboratorio: recorrido completo](../laboratorio/README.md)
 
 ## Proyectos y ejercicios de práctica
@@ -94,5 +96,6 @@ Los laboratorios pueden recorrerse de forma progresiva o consultarse por necesid
 - **Laboratorio:** ejercicios y proyectos con resultados verificables.
 - **Herramientas de desarrollo asistido por IA:** índice orientativo por categorías.
 - **Referencias de herramientas:** enlaces oficiales específicos de cada proveedor.
+- **Referencias de LLM:** familias de modelos, modalidades de distribución y criterios de selección.
 
 El estado de desarrollo de nuevos contenidos se debe gestionar como trabajo editorial, no como una lista de tareas dentro de este índice.
