@@ -90,7 +90,7 @@ Para una tarea trivial puede bastar un único incremento, pero deben mantenerse 
 
 ### 5. Verificar el resultado
 
-Pide al asistente que relacione cada criterio de aceptación con la evidencia que lo demuestra. Ejecuta tú mismo los comandos pertinentes y comprueba los resultados.
+Pide al asistente que relacione cada criterio de aceptación con la prueba o evidencia que lo demuestra. Ejecuta tú mismo los comandos pertinentes y comprueba los resultados. Conserva la línea base obtenida antes del cambio para poder distinguir fallos preexistentes de regresiones; no compares solo el número de pruebas ni des por válida una prueba porque exista en el repositorio.
 
 Como mínimo:
 
@@ -100,6 +100,7 @@ Como mínimo:
 - comprueba la documentación afectada;
 - inspecciona el diff completo y el estado de Git;
 - distingue las comprobaciones realizadas de las que no se han podido ejecutar;
+- relaciona cada criterio de aceptación con una prueba o evidencia concreta y señala cualquier criterio aún no cubierto;
 - comprueba que no se han incorporado credenciales, datos sensibles, dependencias o permisos no autorizados.
 
 No aceptes como evidencia una afirmación del asistente sin un resultado observable. Si una prueba falla, investiga si el fallo pertenece al cambio, a la línea base o al entorno.
@@ -129,7 +130,7 @@ Completa esta tabla en la documentación del ejercicio o en un informe breve:
 | Planificación | Plan propuesto por la IA y correcciones humanas. |
 | Confirmación | Versión del plan autorizada antes de editar código. |
 | Implementación | Resumen de incrementos y decisiones de revisión. |
-| Validación | Comandos ejecutados, resultados y criterios cubiertos. |
+| Validación | Línea base y resultado posterior, comandos ejecutados, resultados y relación entre criterios y pruebas. |
 | Cierre | Diff revisado, estado de Git, limitaciones y siguiente paso. |
 
 ## Diagrama del flujo
