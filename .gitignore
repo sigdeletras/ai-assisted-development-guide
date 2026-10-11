@@ -1,0 +1,38 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# MkDocs and generated documentation
+/site/
+/.cache/
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets/
+.credentials/
+
+# Temporary files
+.tmp/
+.temp/
+*.bak
+*.orig
+*.tmp
