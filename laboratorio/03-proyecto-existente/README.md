@@ -6,7 +6,7 @@ Preparar un repositorio existente para continuar su desarrollo con asistentes de
 
 El laboratorio se centra en **comprender y configurar antes de delegar cambios**. No exige implementar una funcionalidad nueva ni crear archivos de instrucciones para todos los asistentes.
 
-## Preparación
+## Proyecto de práctica
 
 - Utiliza una copia de un proyecto propio no confidencial o el repositorio de práctica.
 - Comprueba las políticas de la organización antes de enviar código a un servicio de IA.
