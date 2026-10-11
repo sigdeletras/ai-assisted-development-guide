@@ -59,6 +59,7 @@ Pruebas, revisión de cambios, análisis estático, CI, *harness engineering* y 
 
 ### 4B. Seguridad, privacidad y control de cambios
 Protección de datos y secretos, permisos mínimos, prompt injection, revisión humana y límites de autonomía.
+- [Seguridad y privacidad al programar con IA](seguridad-privacidad-ia.md)
 - [Primeros pasos: seguridad y responsabilidad](primeros-pasos.md)
 - [Referencias de herramientas](referencias-herramientas.md)
 - [Laboratorio 04](../laboratorio/04-configuracion-entorno-ia/README.md)
