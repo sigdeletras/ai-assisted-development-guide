@@ -7,6 +7,7 @@ Guía práctica para trabajar con asistentes y agentes de IA con calidad, seguri
 ## ¿Qué necesitas hacer?
 
 - **[Empezar a programar con IA](docs/primeros-pasos.md)** — completa una primera tarea y aprende a verificar el resultado.
+- **[Consultar el glosario](docs/glosario.md)** — encuentra definiciones breves de los conceptos y términos técnicos.
 - **[Practicar con un proyecto](laboratorio/README.md)** — aplica el método con ejercicios progresivos.
 - **[Configurar una herramienta](docs/referencias-herramientas.md)** — consulta los puntos de entrada oficiales de Copilot, Claude Code, Cursor y Codex.
 - **[Profundizar en un tema](docs/mapa-contenidos.md)** — encuentra conceptos, criterios y metodologías por módulo.
