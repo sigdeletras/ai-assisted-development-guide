@@ -1,6 +1,6 @@
 # Referencias de herramientas
 
-Una entrada y un inicio rápido por herramienta. Consulta estas páginas para instalarla y conocer sus capacidades; para decidir cómo trabajar, empieza por la [guía metodológica](primeros-pasos.md).
+Consulta esta página para acceder a la documentación oficial y al inicio rápido de cada herramienta. La metodología de trabajo y los criterios de decisión se desarrollan en [Primeros pasos](primeros-pasos.md) y en el [mapa de contenidos](mapa-contenidos.md).
 
 ## Acceso rápido
 
@@ -15,24 +15,21 @@ Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en l
 
 ## Equivalencias orientativas
 
-Los nombres y mecanismos no son idénticos entre herramientas. Esta tabla sirve para localizar el concepto equivalente, no para asumir que los archivos, el alcance o el comportamiento son intercambiables.
+Los nombres y mecanismos no son idénticos entre herramientas. La tabla permite localizar el concepto relacionado; no implica que los archivos, el alcance o el comportamiento sean intercambiables.
 
 | Concepto común | GitHub Copilot | Claude Code | Cursor | OpenAI Codex |
 | --- | --- | --- | --- | --- |
 | Instrucciones persistentes del proyecto | `.github/copilot-instructions.md`; `AGENTS.md` en entornos compatibles | `CLAUDE.md` | `.cursor/rules/*.mdc` o `AGENTS.md` | `AGENTS.md` |
-| Instrucciones específicas por ruta | `.github/instructions/*.instructions.md` en entornos compatibles | Reglas en `.claude/rules/` con ámbito configurable | Reglas `.cursor/rules/*.mdc` con patrones de aplicación | `AGENTS.md` anidados por directorio; el más específico puede añadir instrucciones |
-| Flujos de trabajo reutilizables (*skills*) | Directorios con `SKILL.md`; la ruta depende del cliente | `.claude/skills/<nombre>/SKILL.md` | Skills con `SKILL.md`; ubicación según el tipo de instalación | `.agents/skills/<nombre>/SKILL.md` |
-| Automatización por eventos (*hooks*) | Hooks en CLI y plugins; la configuración depende del cliente | Hooks configurados en los ajustes de Claude Code | Hooks en la configuración de agente/plugins | Hooks disponibles en determinados entornos y plugins |
-| Conexión con herramientas externas (MCP) | Servidores MCP, según el cliente | Servidores MCP, configurables por ámbito | Servidores MCP desde configuración o archivos de proyecto | Servidores MCP desde configuración o plugins |
+| Instrucciones específicas por ruta | `.github/instructions/*.instructions.md` en entornos compatibles | Reglas en `.claude/rules/` con ámbito configurable | Reglas `.cursor/rules/*.mdc` con patrones de aplicación | `AGENTS.md` anidados por directorio |
+| Flujos reutilizables (*skills*) | Directorios con `SKILL.md`; ubicación según cliente | `.claude/skills/<nombre>/SKILL.md` | Skills con `SKILL.md`; ubicación según modalidad | `.agents/skills/<nombre>/SKILL.md` |
+| Automatización por eventos (*hooks*) | Disponible en CLI y determinados entornos/plugins | Hooks configurados en los ajustes de Claude Code | Hooks según configuración de agente y plugins | Disponible en determinados entornos |
+| Herramientas externas (MCP) | Servidores MCP, según cliente | Servidores MCP configurables por ámbito | Servidores MCP desde configuración o archivos de proyecto | Servidores MCP desde configuración o plugins |
 
-**Importante:** las equivalencias son conceptuales, no compatibilidad automática. Algunas funciones solo están disponibles en determinadas modalidades o versiones, y el alcance de una configuración puede cambiar entre productos. Antes de reutilizar archivos o copiar una configuración, verifica la documentación oficial de la herramienta y el entorno concretos.
+**Importante:** las equivalencias son conceptuales, no compatibilidad automática. La disponibilidad y el alcance pueden variar según modalidad, versión y configuración. Antes de reutilizar archivos o copiar una configuración, comprueba la documentación oficial del producto y entorno concretos.
 
-Para profundizar, consulta el [mapa de contenidos](mapa-contenidos.md): [contexto e instrucciones](mapa-contenidos.md), [agentes y automatización](mapa-contenidos.md) y [seguridad](mapa-contenidos.md).
+## Dónde ampliar información
 
-## Relación con el resto de la guía
-
-- [Primeros pasos](primeros-pasos.md): flujo inicial de trabajo y verificación.
-- [Mapa de contenidos](mapa-contenidos.md): conceptos, criterios de decisión y metodologías.
-- [Laboratorio práctico](../laboratorio/README.md): ejercicios para aplicar las prácticas en proyectos.
-
-Los ejercicios se describen junto a los conceptos que enseñan; este documento se limita a orientar hacia las herramientas y sus fuentes oficiales.
+- [Primeros pasos](primeros-pasos.md): flujo inicial y verificación.
+- [Mapa de contenidos](mapa-contenidos.md): conceptos, metodologías y criterios de decisión.
+- [Laboratorios](../laboratorio/README.md): ejercicios prácticos.
+- [Seguridad y trabajo pendiente](../ROADMAP.md): criterios generales y propuestas de evolución.
