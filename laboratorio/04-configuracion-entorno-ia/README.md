@@ -15,6 +15,23 @@ Al terminar, el repositorio tendrá una configuración **mínima, explicada y pr
 - Revisa el estado de Git antes de empezar y trabaja en una rama de ejercicio.
 - No añadas credenciales, datos personales ni información de clientes a los archivos de configuración.
 
+## Seguridad y privacidad: comprobar antes de configurar
+
+No presupongas que una suscripción gratuita, una opción para desactivar el entrenamiento o un modo temporal equivalen a **Zero Data Retention (ZDR, retención cero de datos)**. Son controles diferentes. Una opción puede impedir el uso de conversaciones para entrenar modelos sin eliminar el historial ni garantizar que el proveedor no conserve los datos durante un periodo operativo o de seguridad.
+
+Antes de usar una herramienta con código de un proyecto real, comprueba y registra:
+
+1. **Producto, plan y modalidad:** aplicación web, extensión del IDE, CLI, agente en la nube o API pueden tener condiciones distintas, incluso con el mismo proveedor.
+2. **Entrenamiento:** si las entradas, el código, las respuestas y los metadatos pueden utilizarse para mejorar modelos; dónde se configura la exclusión y a qué funciones se aplica.
+3. **Retención:** qué datos se conservan, durante cuánto tiempo, para qué fines y si existe un compromiso ZDR aplicable a ese producto, plan, modelo y función.
+4. **Tratamiento adicional:** proveedores de modelos, subencargados, registros de abuso, telemetría, almacenamiento de sesiones, índices de código y funciones de terceros.
+5. **Controles disponibles:** exclusión de archivos, límites de contexto, permisos, tratamiento local frente a procesamiento en la nube y configuración administrada por la organización.
+6. **Condiciones contractuales:** requisitos del cliente, NDA, política de seguridad, protección de datos y autorización para compartir código con terceros.
+
+**Regla de decisión:** si no puedes verificar las condiciones aplicables, no envíes código propietario, datos personales, secretos ni información confidencial. Usa un proyecto sintético, datos anonimizados de forma robusta o una alternativa aprobada. Desactivar el entrenamiento no equivale a ZDR; borrar el historial tampoco demuestra que no haya existido retención previa.
+
+No generalices que todos los planes gratuitos tienen las mismas condiciones ni que ningún plan gratuito ofrece controles concretos. Evalúa el servicio exacto y conserva el enlace y la fecha de la documentación consultada. Las garantías contractuales deben verificarse en los términos vigentes, no inferirse a partir de un ajuste de interfaz.
+
 ## Conceptos que vas a distinguir
 
 | Necesidad | Mecanismo habitual | Cuándo utilizarlo |
@@ -90,7 +107,7 @@ No es obligatorio implementar ambos. Para cada uno, responde primero a una neces
 
 Si no hay una justificación suficiente, deja estos mecanismos sin configurar y registra la decisión. No simules un hook mediante instrucciones en lenguaje natural ni confundas un agente especializado con un subagente que la herramienta delega en tiempo de ejecución.
 
-### 6. Revisar ajustes y permisos
+### 6. Revisar ajustes, privacidad y permisos
 
 Inspecciona la configuración de la herramienta y establece el mínimo acceso necesario para el ejercicio.
 
@@ -99,8 +116,11 @@ Inspecciona la configuración de la herramienta y establece el mínimo acceso ne
 - No habilites acceso a red, MCP, despliegues ni operaciones destructivas si la tarea no los necesita.
 - Comprueba qué archivos de configuración son compartidos por el equipo y cuáles son locales o personales.
 - Documenta las diferencias entre configuración versionada y configuración externa al repositorio.
+- Completa una ficha de privacidad con producto, plan, modalidad de uso, uso para entrenamiento, retención/ZDR, terceros, controles aplicados, fuentes y fecha de consulta.
+- Si se utiliza una extensión o agente de IDE, comprueba qué archivos y contexto puede recopilar o enviar, y configura exclusiones donde existan.
+- Si el proveedor o la política aplicable no permite verificar las garantías necesarias, usa exclusivamente datos sintéticos o un entorno autorizado.
 
-No copies ajustes de ejemplo sin comprender sus efectos. Los nombres, formatos y opciones dependen del producto y de su versión.
+No copies ajustes de ejemplo sin comprender sus efectos. Los nombres, formatos, opciones y garantías dependen del producto, la función, el plan y su versión.
 
 ### 7. Validar con pruebas controladas
 
@@ -113,7 +133,8 @@ Verifica:
 - que la skill sigue su procedimiento y criterios de finalización;
 - que agentes y hooks, si existen, respetan sus límites;
 - que no intenta acceder a secretos ni ejecutar acciones fuera del alcance;
-- que las pruebas y comprobaciones producen resultados observables.
+- que las pruebas y comprobaciones producen resultados observables;
+- que el contexto compartido con el asistente es compatible con la clasificación de datos y las condiciones de uso documentadas.
 
 Revisa el diff y el estado de Git. Repite el ajuste y la validación si encuentras instrucciones contradictorias, mecanismos que no se activan o permisos excesivos.
 
@@ -124,6 +145,7 @@ Revisa el diff y el estado de Git. Repite el ajuste y la validación si encuentr
 - Al menos una skill probada con una tarea representativa.
 - Una regla específica validada cuando exista una necesidad real; si no, justificación de su ausencia.
 - Decisión documentada sobre agente especializado y hooks.
+- Ficha de privacidad y seguridad con fuentes y fecha de consulta, incluyendo el análisis de entrenamiento, retención/ZDR y tratamiento por terceros.
 - Registro breve de las pruebas de validación, incidencias y ajustes.
 - Diff revisado y estado final de Git.
 
@@ -132,16 +154,19 @@ Revisa el diff y el estado de Git. Repite el ajuste y la validación si encuentr
 ```mermaid
 flowchart TD
     A["Recuperar el diagnóstico del lab. 03"] --> B["Identificar necesidades y elegir herramienta"]
-    B --> C["Diseñar la configuración mínima"]
-    C --> D["Crear instrucciones persistentes"]
-    D --> E["Añadir reglas y skills cuando aporten valor"]
-    E --> F["Evaluar agentes, hooks y permisos"]
-    F --> G["Probar con tareas controladas"]
-    G --> H{"¿Se comporta según lo esperado?"}
-    H -- "Sí" --> I["Revisar diff y documentar decisiones"]
-    H -- "No" --> J["Corregir instrucciones o configuración"]
-    J --> G
-    I --> K["Entorno validado para el proyecto"]
+    B --> C["Comprobar privacidad, retención y permisos"]
+    C --> D{"¿La herramienta está autorizada para estos datos?"}
+    D -- "No o no se sabe" --> E["Usar datos sintéticos o alternativa aprobada"]
+    E --> C
+    D -- "Sí" --> F["Diseñar la configuración mínima"]
+    F --> G["Crear instrucciones, reglas y skills cuando aporten valor"]
+    G --> H["Evaluar agentes, hooks y permisos"]
+    H --> I["Probar con tareas controladas"]
+    I --> J{"¿Se comporta según lo esperado?"}
+    J -- "Sí" --> K["Revisar diff y documentar decisiones"]
+    J -- "No" --> L["Corregir instrucciones o configuración"]
+    L --> I
+    K --> M["Entorno validado para el proyecto"]
 ```
 
 ## Criterios de aceptación
@@ -152,14 +177,19 @@ flowchart TD
 - La skill incluye un procedimiento comprobable y se ha probado.
 - Agentes especializados y hooks se incorporan solo si están justificados y soportados por la herramienta.
 - Los permisos son proporcionales a la tarea; no se versionan secretos.
+- La privacidad se ha evaluado para el producto, plan y modalidad concretos; no se confunde exclusión de entrenamiento con ZDR.
+- La ficha de privacidad incluye fuentes y fecha, y no se envían datos no autorizados.
 - Las diferencias entre herramientas están documentadas y verificadas en sus fuentes oficiales.
 - La validación deja evidencias observables, y el diff y el estado final de Git se han revisado.
 
 ## Fuentes oficiales para consultar antes de configurar
 
-La disponibilidad de cada mecanismo depende de la herramienta, la interfaz, la versión y, en algunos casos, el plan. Consulta la documentación del producto concreto antes de implementar:
+La disponibilidad de cada mecanismo y las garantías de datos dependen de la herramienta, la interfaz, la versión y, en algunos casos, el plan. Consulta la documentación del producto concreto antes de implementarlo:
 
-- [GitHub Copilot: guía comparativa de opciones de personalización](https://docs.github.com/en/copilot/reference/customization-cheat-sheet)
+- [Controles de datos de ChatGPT](https://help.openai.com/es-es/articles/7730893-data-controls-in-chatgpt)
+- [Cómo se utilizan los datos para mejorar los modelos de OpenAI](https://help.openai.com/es-es/articles/5722486-how-your-data-is-used-to-improve-model-performance)
+- [GitHub Copilot: políticas para suscriptores individuales](https://docs.github.com/es/copilot/how-tos/manage-your-account/manage-policies)
+- [GitHub Copilot: alojamiento de modelos y compromisos de retención](https://docs.github.com/es/copilot/reference/ai-models/model-hosting)
 - [GitHub Copilot: tipos de instrucciones y compatibilidad](https://docs.github.com/en/copilot/reference/custom-instructions-support)
 - [Claude Code: memoria e instrucciones del proyecto](https://code.claude.com/docs/en/memory)
 - [Claude Code: skills](https://code.claude.com/docs/en/skills)
@@ -171,4 +201,4 @@ La disponibilidad de cada mecanismo depende de la herramienta, la interfaz, la v
 
 ## Regla de trabajo
 
-Configura solo lo que puedas explicar, probar y mantener. Un entorno con instrucciones breves, una skill útil y permisos bien definidos es preferible a una colección de archivos redundantes que nadie valida.
+Configura solo lo que puedas explicar, probar y mantener. Un entorno con instrucciones breves, una skill útil, permisos bien definidos y condiciones de privacidad verificadas es preferible a una colección de archivos redundantes que nadie valida.
