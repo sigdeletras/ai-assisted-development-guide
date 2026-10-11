@@ -1,45 +1,36 @@
-# Referencias de herramientas y documentación
+# Referencias de herramientas
 
-Este documento reúne los puntos de entrada oficiales para aprender a utilizar asistentes de programación concretos. No sustituye la guía metodológica: las herramientas cambian, mientras que las prácticas de especificación, revisión y verificación son transferibles.
+Una entrada y un inicio rápido por herramienta. Consulta estas páginas para instalarla y conocer sus capacidades; para decidir cómo trabajar, empieza por la [guía metodológica](primeros-pasos.md).
 
-Comprueba la documentación del proveedor antes de seguir instrucciones de instalación o configuración, ya que las funciones disponibles pueden depender de la versión, el plan y las políticas de la organización.
+## Acceso rápido
 
-## GitHub Copilot
+| Herramienta | Documentación | Inicio rápido |
+| --- | --- | --- |
+| GitHub Copilot | [Documentación de Copilot](https://docs.github.com/en/copilot) | [Primeros pasos con la app de Copilot](https://docs.github.com/en/copilot/get-started/quickstart-copilot-app) |
+| Claude Code | [Documentación de Claude Code](https://code.claude.com/docs/en/overview) | [Quickstart](https://code.claude.com/docs/en/quickstart) |
+| Cursor | [Documentación de Cursor](https://cursor.com/docs) | [Quickstart](https://prod.cursor.com/docs/get-started/quickstart) |
+| OpenAI Codex | [Documentación de Codex](https://developers.openai.com/learn/codex) | [Inicio rápido de Codex CLI](https://github.com/openai/codex#quickstart) |
 
-- **Inicio:** [Get started with GitHub Copilot](https://docs.github.com/en/copilot/get-started). Permite elegir entre los distintos entornos de uso.
-- **Guía rápida:** [Quickstart for GitHub Copilot](https://docs.github.com/en/copilot/get-started/quickstart).
-- **Buenas prácticas para tareas:** [Best practices for using GitHub Copilot to work on tasks](https://docs.github.com/en/copilot/using-github-copilot/using-copilot-coding-agent-to-work-on-tasks/best-practices-for-using-copilot-to-work-on-tasks). Se centra en Copilot cloud agent y en cómo definir, planificar y revisar tareas.
+Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en la nube). El inicio rápido enlazado corresponde a una modalidad concreta; comprueba que sea la adecuada para tu entorno y las políticas de tu organización.
 
-## Claude Code
+## Equivalencias orientativas
 
-- **Documentación:** [Claude Code overview](https://code.claude.com/docs/en/overview).
-- **Inicio rápido:** [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
-- **Buenas prácticas:** [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices). Describe flujos de exploración, planificación, implementación y verificación, así como el uso de instrucciones persistentes.
+Los nombres y mecanismos no son idénticos entre herramientas. La tabla sirve para localizar el concepto equivalente, no para asumir que los archivos, el alcance o el comportamiento son intercambiables.
 
-## Cursor
+| Concepto común | GitHub Copilot | Claude Code | Cursor | OpenAI Codex |
+| --- | --- | --- | --- | --- |
+| Instrucciones persistentes del proyecto | `.github/copilot-instructions.md`; también admite `AGENTS.md` en entornos compatibles | `CLAUDE.md`; también admite `AGENTS.md` | Reglas de proyecto en `.cursor/rules/`; admite instrucciones `AGENTS.md` en flujos compatibles | `AGENTS.md` |
+| Instrucciones específicas por contexto o ruta | `.github/instructions/*.instructions.md` en entornos compatibles | Instrucciones y reglas mediante archivos de memoria/configuración y reglas del proyecto | Reglas con ámbito y patrones de aplicación | Instrucciones `AGENTS.md` por directorio; el alcance depende de la ubicación |
+| Flujos de trabajo reutilizables (*skills*) | Disponibilidad y soporte según el producto y el entorno | Skills | Skills | Skills |
+| Automatización por eventos (*hooks*) | Depende del producto o entorno de Copilot; no hay correspondencia universal | Hooks de Claude Code | No asumir equivalencia directa con reglas o skills; comprobar la funcionalidad vigente | Hooks según el entorno y las extensiones disponibles; comprobar la documentación vigente |
+| Conexión con herramientas externas | Integraciones y servidores MCP compatibles con el entorno | MCP | MCP | MCP |
 
-- **Documentación:** [Cursor Docs](https://cursor.com/docs).
-- **Inicio rápido:** [Cursor Quickstart](https://cursor.com/docs/get-started/quickstart).
-- **Primer proyecto:** [Your first project](https://prod.cursor.com/help/getting-started/first-project).
-
-## OpenAI Codex
-
-Codex ofrece distintos puntos de entrada, entre ellos CLI, extensión para IDE, aplicación y versión web. Utiliza el cliente disponible y autorizado en tu entorno.
-
-- **Acceso con un plan de ChatGPT:** [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan).
-- **Recursos para desarrolladores:** [Codex — OpenAI Developers](https://developers.openai.com/learn/codex).
-- **CLI:** [Repositorio oficial de Codex CLI](https://github.com/openai/codex).
-
-## Criterios para usar estas referencias
-
-- Prioriza la documentación oficial para instalación, configuración, permisos y capacidades.
-- Distingue las características generales de los asistentes de las funciones específicas de cada producto.
-- Comprueba qué datos se procesan, qué permisos recibe la herramienta y qué políticas de retención o privacidad se aplican.
-- No compartas credenciales, datos de clientes ni información confidencial sin autorización explícita y sin verificar las condiciones aplicables.
+**Importante:** esta equivalencia es conceptual y no implica compatibilidad automática. El soporte puede variar entre la app, el IDE, la CLI, el agente en la nube, la versión y el plan. Antes de copiar una configuración entre herramientas, verifica su documentación oficial. Los conceptos de [instrucciones y contexto](mapa-contenidos.md), [agentes y automatización](mapa-contenidos.md) y [seguridad](mapa-contenidos.md) se explican en el mapa temático.
 
 ## Relación con el resto de la guía
 
-- [Primeros pasos con asistentes de programación](primeros-pasos.md): metodología inicial y orientación para practicar.
-- [Laboratorio práctico](../laboratorio/README.md): proyectos y ejercicios para aplicar los métodos de la guía.
+- [Primeros pasos](primeros-pasos.md): flujo inicial de trabajo y verificación.
+- [Mapa de contenidos](mapa-contenidos.md): conceptos, criterios de decisión y metodologías.
+- [Laboratorio práctico](../laboratorio/README.md): ejercicios para aplicar las prácticas en proyectos.
 
-Los ejercicios se describen junto a los conceptos y prácticas que enseñan. Este documento se limita a reunir referencias de producto; no define ejercicios independientes.
+Los ejercicios se describen junto a los conceptos que enseñan; este documento se limita a orientar hacia las herramientas y sus fuentes oficiales.
