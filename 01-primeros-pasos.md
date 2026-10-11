@@ -10,7 +10,7 @@ Esta guía está pensada para desarrolladores con experiencia que empiezan a uti
 4. Revisa el diff, ejecuta las pruebas y comprueba el comportamiento antes de aceptar el resultado.
 5. No introduzcas secretos, credenciales ni datos confidenciales en una herramienta sin confirmar antes las políticas de la empresa.
 
-No es necesario aprender todas las herramientas a la vez. Las tres guías siguientes son puntos de entrada; las funciones disponibles pueden variar según el producto, la integración y el plan contratado.
+No es necesario aprender todas las herramientas a la vez. Las cuatro guías siguientes son puntos de entrada; las funciones disponibles pueden variar según el producto, la integración y el plan contratado.
 
 ## GitHub Copilot
 
@@ -35,6 +35,16 @@ No es necesario aprender todas las herramientas a la vez. Las tres guías siguie
 - **Primer proyecto:** [Your first project](https://prod.cursor.com/help/getting-started/first-project). Explica cómo abrir un proyecto, trabajar con Agent y aportar contexto.
 
 **Práctica inicial sugerida:** abre un repositorio conocido, pide al agente que localice dónde se implementa una funcionalidad y solicita un plan sin cambios. A continuación, encárgale una mejora acotada y revisa cada modificación en el diff.
+
+## OpenAI Codex
+
+Codex dispone de varios puntos de entrada: terminal (CLI), extensión para IDE, aplicación de escritorio y versión web. Para iniciarse, elige el cliente que esté aprobado y disponible en tu entorno de trabajo.
+
+- **Primeros pasos y acceso con ChatGPT:** [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan). Describe cómo acceder a Codex desde los distintos clientes; la disponibilidad de funciones depende del plan y de la configuración del espacio de trabajo.
+- **Documentación para desarrolladores:** [Codex — OpenAI Developers](https://developers.openai.com/learn/codex). Recopila guías, vídeos y recursos de uso.
+- **CLI e instalación:** [Repositorio oficial de Codex CLI](https://github.com/openai/codex). Incluye instrucciones de instalación y puesta en marcha.
+
+**Práctica inicial sugerida:** abre un repositorio conocido con el cliente de Codex autorizado y pídele que explique la estructura del proyecto. Después solicita un plan para una modificación pequeña, revisa los cambios propuestos y ejecuta las pruebas antes de aceptarlos.
 
 ## Qué aprender primero
 
