@@ -37,13 +37,13 @@ Ejecuta los comandos disponibles antes de realizar cambios:
 - pruebas automatizadas;
 - linters, formateadores, análisis estático o compilación que ya utilice el proyecto.
 
-Registra los comandos ejecutados y sus resultados. Distingue entre fallos previos, herramientas que no están configuradas y comprobaciones que no se han podido ejecutar. No añadas dependencias ni cambies la configuración solo para conseguir una ejecución limpia.
+Registra los comandos exactos, el resultado observado y el entorno en que se ejecutaron. Para este proyecto de práctica, comprueba como mínimo el estado de Git y ejecuta las pruebas con el comando que documente el proyecto (por ejemplo, `python -m pytest`, si pytest está instalado). Si una orden falla, conserva el error relevante y explica si se debe a una regresión, al entorno o a una configuración ausente; no lo clasifiques sin evidencia. Distingue entre pruebas ejecutadas, no ejecutadas y no disponibles. No añadas dependencias ni cambies la configuración solo para conseguir una ejecución limpia.
 
 ### 3. Convenciones, riesgos y límites
 
 Pide al asistente que identifique convenciones demostrables y zonas de riesgo: módulos críticos, ausencia de pruebas, dependencias externas, generación de archivos, migraciones, configuración sensible y operaciones con efectos secundarios.
 
-Contrasta las conclusiones con el código, la documentación y la configuración real. Anota las dudas pendientes. No conviertas las sugerencias del asistente en reglas del proyecto hasta haberlas validado.
+Contrasta las conclusiones con el código, la documentación y la configuración real. Para cada conclusión importante, registra la ruta o salida que la respalda y etiqueta como **hecho comprobado**, **hipótesis** o **pendiente de verificar**. Anota las dudas pendientes. No conviertas las sugerencias del asistente en reglas del proyecto hasta haberlas validado.
 
 ### 4. Configurar las instrucciones de la herramienta
 
@@ -75,12 +75,22 @@ Comprueba que utiliza las instrucciones y los comandos reales del repositorio, r
 
 ## Entregables
 
-- Inventario técnico con referencias a archivos.
-- Registro de la línea base: comandos, resultados y limitaciones.
-- Mapa breve de riesgos y cuestiones pendientes.
+- Inventario técnico con referencias a archivos y distinción entre hechos, hipótesis y dudas.
+- Registro reproducible de la línea base: estado inicial de Git, comandos exactos, resultados observados y limitaciones.
+- Mapa breve de riesgos y cuestiones pendientes, con evidencia o motivo de la duda.
 - Decisión justificada sobre los mecanismos de instrucciones que se necesitan.
 - Instrucciones de proyecto mínimas, solo para las herramientas seleccionadas.
-- Resultado de la validación final y estado de Git.
+- Resultado de la validación final y estado final de Git, indicando cualquier cambio inesperado.
+
+### Plantilla mínima para registrar la línea base
+
+| Comprobación | Comando o evidencia | Resultado observado | Estado |
+| --- | --- | --- | --- |
+| Estado de Git | `git status --short --branch` | Anotar la salida real | Ejecutado / pendiente |
+| Pruebas | Comando definido por el proyecto | Anotar resumen y fallos reales | Pasan / fallan / no ejecutadas |
+| Calidad adicional | Solo si existe configuración | Anotar salida o indicar que no está configurada | Ejecutado / no disponible |
+
+No rellenes la tabla con resultados esperados ni supongas que las pruebas pasan por el mero hecho de que existan archivos de test.
 
 ## Flujo de trabajo
 
