@@ -49,13 +49,15 @@ Cómo proporcionar contexto relevante y cuándo utilizar instrucciones persisten
 - [Referencias de herramientas](referencias-herramientas.md)
 - [Diseño de ejercicios](estructura-ejercicios.md)
 - [Laboratorio: proyecto existente](../laboratorio/03-proyecto-existente/README.md)
+- [Laboratorio: configuración del entorno de IA](../laboratorio/04-configuracion-entorno-ia/README.md)
 
 ### 3. Agentes, herramientas y automatización
 
 Agentes y subagentes, skills, hooks, MCP, permisos y delegación de tareas. Estos mecanismos resuelven necesidades distintas; no es necesario activarlos todos.
 
 - [Referencias de herramientas](referencias-herramientas.md)
-- [Laboratorio](../laboratorio/README.md)
+- [Laboratorio: configuración del entorno de IA](../laboratorio/04-configuracion-entorno-ia/README.md)
+- [Laboratorio completo](../laboratorio/README.md)
 
 ### 4A. Ingeniería del software y calidad
 
@@ -70,6 +72,7 @@ Protección de datos y secretos, permisos mínimos, prompt injection, revisión 
 
 - [Primeros pasos: seguridad y responsabilidad](primeros-pasos.md)
 - [Referencias de herramientas](referencias-herramientas.md)
+- [Laboratorio: configuración del entorno de IA](../laboratorio/04-configuracion-entorno-ia/README.md)
 
 ### 5. Gobierno, evaluación y mejora continua
 
