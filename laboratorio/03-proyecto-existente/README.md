@@ -86,16 +86,17 @@ Comprueba que utiliza las instrucciones y los comandos reales del repositorio, r
 
 ```mermaid
 flowchart TD
-    A["Explorar el repositorio sin editar"] --> B["Verificar arquitectura y comandos"]
-    B --> C["Registrar línea base"]
-    C --> D["Contrastar convenciones y riesgos"]
-    D --> E["Elegir mecanismos de instrucciones"]
-    E --> F["Configurar solo lo necesario"]
-    F --> G["Validar con una tarea de planificación"]
-    G --> H{"¿Comprende el proyecto y respeta los límites?"}
-    H -- "Sí" --> I["Entorno preparado para una tarea real"]
-    H -- "No" --> J["Corregir instrucciones o resolver dudas"]
-    J --> G
+    A["Comprobar estado de Git"] --> B["Explorar el repositorio sin editar"]
+    B --> C["Verificar arquitectura y comandos"]
+    C --> D["Ejecutar pruebas y registrar línea base"]
+    D --> E["Documentar convenciones, riesgos e incertidumbres"]
+    E --> F["Elegir instrucciones según las herramientas"]
+    F --> G["Configurar solo lo necesario"]
+    G --> H["Validar mediante una tarea de planificación"]
+    H --> I{"¿Comprende el proyecto y respeta los límites?"}
+    I -- "Sí" --> J["Entorno preparado para continuar el desarrollo con IA"]
+    I -- "No" --> K["Investigar dudas y ajustar instrucciones"]
+    K --> H
 ```
 
 ## Criterios de aceptación
