@@ -1,8 +1,6 @@
-# ai-assisted-development-guide
-
 # AI-Assisted Development Guide
 
-Guía práctica y evolutiva sobre desarrollo de software asistido por inteligencia artificial.
+(otra) Guía práctica y evolutiva sobre desarrollo de software asistido por inteligencia artificial.
 
 ## Objetivo
 
