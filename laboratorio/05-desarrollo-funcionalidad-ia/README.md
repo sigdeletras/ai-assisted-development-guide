@@ -8,8 +8,8 @@ El objetivo no es conseguir que la IA escriba mucho código, sino completar un c
 
 ## Preparación
 
-- Utiliza la copia del proyecto de práctica de los laboratorios anteriores o un repositorio propio autorizado y no confidencial.
-- Abre ese proyecto como espacio de trabajo del asistente, no la raíz de la guía. Proporciónale estas instrucciones explícitamente cuando las necesite. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
+- Utiliza la copia independiente del proyecto de los laboratorios anteriores o copia un proyecto de referencia a un directorio fuera del repositorio de la guía. También puedes utilizar un repositorio propio autorizado y no confidencial.
+- Abre únicamente esa copia como espacio de trabajo del asistente, nunca la raíz de la guía. Este README contiene las tareas sugeridas con IA; el README del proyecto documenta el código. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 - Comprueba que el estado de Git está limpio o que cualquier cambio previo está identificado y protegido.
 - Verifica que las pruebas de la línea base siguen pasando.
 - Comprueba qué instrucciones y mecanismos de configuración aplican a la tarea.
