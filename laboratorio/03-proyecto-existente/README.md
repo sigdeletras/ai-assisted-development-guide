@@ -8,8 +8,8 @@ El laboratorio se centra en **comprender y configurar antes de delegar cambios**
 
 ## Proyecto de práctica
 
-- Utiliza una copia de un proyecto propio no confidencial o el proyecto de práctica incluido en [`project/`](project/README.md).
-- Trabaja en una copia independiente del proyecto, con su propio repositorio Git, y ábrela como espacio de trabajo del asistente. Sigue el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo); este README contiene las instrucciones del ejercicio, no la documentación del proyecto.
+- Utiliza un proyecto propio no confidencial o copia el proyecto incluido en [`project/`](project/README.md) a un directorio fuera del repositorio de la guía.
+- Abre únicamente esa copia independiente como espacio de trabajo del asistente y utiliza su propio repositorio Git. Este README contiene las tareas sugeridas con IA; el README dentro de la copia documenta el proyecto. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 - Utiliza la misma copia en los laboratorios 04 y 05. El laboratorio 04 incluye además una réplica de este proyecto con las instrucciones generales ya creadas, para quien empiece directamente por él.
 - Comprueba las políticas de la organización antes de enviar código a un servicio de IA.
 - No incluyas credenciales, datos personales, secretos ni información contractual.
