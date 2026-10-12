@@ -62,11 +62,14 @@ Si el asistente trabaja desde la raíz de la guía, puede confundir el README de
 
 Si un laboratorio exige modificar la propia guía, trátalo como una tarea diferente y explícita.
 
-### Copia independiente (recomendada)
+### Copia independiente (obligatoria)
 
-Cuando el ejercicio incluya una carpeta `project/`, sigue las instrucciones de su README. Si vas a reutilizar el proyecto en varios laboratorios, copia el proyecto fuera de la guía y crea un repositorio propio:
+Antes de utilizar un asistente, copia el directorio `project/` del ejercicio a una ubicación fuera del repositorio de la guía. Abre únicamente esa copia como espacio de trabajo. No trabajes directamente sobre `project/` dentro de la guía ni abras la raíz de la guía en el asistente.
+
+Por ejemplo, desde la raíz del repositorio:
 
 ```bash
+mkdir -p ~/labs
 cp -r laboratorio/03-proyecto-existente/project ~/labs/poi-app
 cd ~/labs/poi-app
 git init
@@ -74,11 +77,11 @@ git add .
 git commit -m "Estado inicial del proyecto de práctica"
 ```
 
-Así, la línea base, el diff y el estado de Git corresponden solo al proyecto, y la guía no recibe cambios accidentales. Utiliza la misma copia en los laboratorios 03, 04 y 05 cuando quieras seguir la secuencia recomendada.
+Si la copia ya contiene un repositorio Git, comprueba su estado y su historial antes de inicializarlo de nuevo. No sobrescribas cambios existentes. Para el laboratorio 02, crea directamente un directorio nuevo fuera de la guía y desarrolla allí el proyecto.
 
-### Trabajo dentro de la guía
+El README del ejercicio permanece en el repositorio de la guía y contiene las tareas sugeridas con IA, los criterios de aceptación y las preguntas de reflexión. El README que está dentro de la copia del proyecto describe el código y cómo instalarlo, ejecutarlo y probarlo. Cuando el asistente necesite las instrucciones del ejercicio, proporciónaselas explícitamente como contexto; no abras la guía como espacio de trabajo para que las encuentre.
 
-Para ejercicios breves, como el laboratorio 01, puedes abrir directamente su carpeta `project/` como espacio de trabajo si existe. Limita entonces las órdenes de Git a ese directorio (`git status --short -- .`, `git diff -- .`) y no confirmes los cambios del ejercicio en el repositorio de la guía.
+Utiliza la misma copia independiente en los laboratorios 03, 04 y 05 si quieres seguir la secuencia recomendada. Si un ejercicio incluye un proyecto de referencia propio, copia ese proyecto fuera de la guía antes de empezar.
 
 ## Requisitos iniciales
 
