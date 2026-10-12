@@ -10,6 +10,21 @@ Este documento define el patrón editorial para conectar los conceptos de la gu�
 - Evita duplicar en la guía los pasos detallados que ya están documentados en el laboratorio.
 - No todos los apartados necesitan un ejercicio. En contenidos puramente descriptivos o de referencia, no fuerces una actividad artificial.
 - Si todavía no existe un escenario adecuado en el laboratorio, registra la necesidad como pendiente; no inventes un enlace ni des por creado el ejercicio.
+- Asigna un nivel de aprendizaje al ejercicio según la competencia que demuestra, no por la dificultad aparente de la herramienta utilizada.
+
+## Niveles de aprendizaje
+
+La guía utiliza cinco niveles. Son una orientación de progresión, no una barrera para consultar documentos o resolver tareas puntuales.
+
+| Nivel | Nombre | Competencia principal |
+| --- | --- | --- |
+| 1 | Iniciación práctica | Completar una tarea pequeña con contexto, revisión del diff y comprobaciones. |
+| 2 | Desarrollo estructurado | Trabajar con requisitos, estructura de proyecto, Git y pruebas. |
+| 3 | Configuración del entorno | Elegir, configurar y comprobar instrucciones, reglas, skills y permisos necesarios. |
+| 4 | Ingeniería asistida | Relacionar especificaciones, decisiones, implementación y pruebas mediante un flujo controlado. |
+| 5 | Gobierno y escalado | Evaluar riesgos, calidad, costes y utilidad, y definir controles reproducibles para equipos. |
+
+Consulta el [itinerario de aprendizaje](itinerario-aprendizaje.md) para los objetivos, conocimientos previos y criterios de salida de cada nivel.
 
 ## Plantilla estándar
 
@@ -18,7 +33,9 @@ Al final del apartado conceptual, añade el bloque siguiente cuando corresponda:
 ```markdown
 ### Ejercicio
 
+- **Nivel:** 1–5 y nombre del nivel.
 - **Objetivo:** habilidad o concepto que se va a practicar.
+- **Conocimientos previos:** requisitos realmente necesarios; indica «ninguno» si procede.
 - **Proyecto del laboratorio:** [Etapa N · Nombre del proyecto](../laboratorio/NN-nombre/README.md).
 - **Tarea:** actividad concreta que hay que realizar; consulta el proyecto enlazado para seguir los pasos.
 - **Criterio de éxito:** resultado observable que permite comprobar que se ha completado correctamente.
@@ -29,7 +46,9 @@ Adapta el enlace a la ubicación real del documento y al proyecto más adecuado.
 
 ### Significado de los campos
 
+- **Nivel:** sitúa la práctica en la progresión común de la guía. Si un ejercicio sirve a varios niveles, asigna el nivel principal y explica las ampliaciones opcionales.
 - **Objetivo:** expresa el aprendizaje, no una acción genérica como «usar la IA».
+- **Conocimientos previos:** evita exigir contenidos que el lector aún no ha encontrado. Enlaza los requisitos cuando sea necesario.
 - **Proyecto del laboratorio:** apunta directamente al README del ejercicio, no solo a la portada del laboratorio.
 - **Tarea:** resume qué se hará sin copiar todas las instrucciones del laboratorio.
 - **Criterio de éxito:** define una condición concreta y observable.
@@ -49,19 +68,21 @@ Si un laboratorio no necesita código propio, no crees `project/`; indica en el 
 ## Flujo para desarrollar o actualizar un apartado
 
 1. **Definir el aprendizaje:** concreta qué debe saber hacer el lector al terminar el apartado.
-2. **Desarrollar el contenido:** explica el concepto, los casos de uso, los criterios de decisión, las alternativas y las limitaciones.
-3. **Elegir el escenario:** identifica qué proyecto existente del laboratorio permite practicar esa habilidad. Si ninguno encaja, define la ampliación necesaria antes de enlazarlo.
-4. **Diseñar la tarea:** formula una actividad acotada y coherente con el contenido del apartado.
-5. **Añadir el bloque estándar:** completa objetivo, proyecto, tarea, criterio de éxito y verificación.
-6. **Preparar o actualizar el laboratorio:** documenta allí los pasos operativos, los archivos implicados, las restricciones y los criterios de aceptación necesarios para realizar el ejercicio.
-7. **Comprobar la correspondencia:** verifica que el enlace existe, que el laboratorio permite practicar el concepto y que no hay instrucciones duplicadas o contradictorias.
-8. **Revisar seguridad y calidad:** incluye límites de permisos, protección de datos y comprobaciones técnicas cuando proceda.
-9. **Registrar lo pendiente:** si falta el escenario o no se ha podido validar el ejercicio, indícalo como pendiente de revisión; no lo presentes como completado.
+2. **Asignar el nivel:** elige el nivel mínimo que permite practicar la competencia con seguridad; no confundas familiaridad con una herramienta con dominio metodológico.
+3. **Desarrollar el contenido:** explica el concepto, los casos de uso, los criterios de decisión, las alternativas y las limitaciones.
+4. **Elegir el escenario:** identifica qué proyecto existente del laboratorio permite practicar esa habilidad. Si ninguno encaja, define la ampliación necesaria antes de enlazarlo.
+5. **Diseñar la tarea:** formula una actividad acotada y coherente con el contenido del apartado.
+6. **Añadir el bloque estándar:** completa nivel, objetivo, conocimientos previos, proyecto, tarea, criterio de éxito y verificación.
+7. **Preparar o actualizar el laboratorio:** documenta allí los pasos operativos, los archivos implicados, las restricciones y los criterios de aceptación necesarios para realizar el ejercicio.
+8. **Comprobar la correspondencia:** verifica que el enlace existe, que el laboratorio permite practicar el concepto y que no hay instrucciones duplicadas o contradictorias.
+9. **Revisar seguridad y calidad:** incluye límites de permisos, protección de datos y comprobaciones técnicas cuando proceda.
+10. **Registrar lo pendiente:** si falta el escenario o no se ha podido validar el ejercicio, indícalo como pendiente de revisión; no lo presentes como completado.
 
 ## Criterios de revisión
 
 Antes de dar por listo un apartado con ejercicio, comprueba:
 
+- El nivel y los conocimientos previos son coherentes con la práctica.
 - El ejercicio practica directamente el concepto explicado.
 - El trabajo puede completarse en pasos pequeños y revisables.
 - El criterio de éxito es observable y no depende de que el asistente afirme haber terminado.
