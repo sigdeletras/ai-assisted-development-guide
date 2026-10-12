@@ -13,8 +13,8 @@ Al terminar, el repositorio tendrá una configuración **mínima, explicada y pr
   - continúa con la copia del proyecto de práctica preparada en el laboratorio 03;
   - parte del proyecto incluido en [`project/`](project/README.md), que reproduce el estado esperado al terminar el laboratorio 03: el mismo código y un `AGENTS.md` con las instrucciones generales; o
   - utiliza un repositorio propio autorizado y no confidencial.
-- Si partes de `project/`, cópialo a un directorio independiente con su propio repositorio Git, igual que en el laboratorio 03.
-- Abre ese proyecto como espacio de trabajo del asistente y crea allí los archivos de configuración, nunca en la raíz de la guía. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
+- Si partes de `project/`, cópialo a un directorio fuera del repositorio de la guía y utiliza allí su propio repositorio Git, igual que en el laboratorio 03.
+- Abre únicamente esa copia como espacio de trabajo del asistente y crea allí los archivos de configuración, nunca en la guía. El README de este ejercicio contiene las tareas sugeridas con IA; el README del proyecto documenta el código. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 - Elige una herramienta principal y, si procede, una segunda herramienta con la que quieras compartir instrucciones.
 - Comprueba la documentación oficial vigente y las políticas de tu organización.
 - Revisa el estado de Git antes de empezar y trabaja en una rama de ejercicio.
