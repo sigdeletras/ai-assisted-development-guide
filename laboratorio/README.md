@@ -2,13 +2,17 @@
 
 Este laboratorio acompaña a la guía conceptual con ejercicios pequeños y verificables. Usa Python como punto de partida y un dominio geográfico sencillo —puntos de interés y GeoJSON— para practicar técnicas que se pueden trasladar a otros lenguajes y proyectos.
 
+Consulta el [itinerario de aprendizaje](../docs/itinerario-aprendizaje.md) para conocer las competencias y los criterios de salida asociados a los laboratorios.
+
 ## Proyectos y ejercicios
 
-1. **[01 · Primer contacto](01-primer-contacto/README.md)**: practicar chat, autocompletado y cambios pequeños sobre un script existente.
-2. **[02 · Proyecto nuevo](02-proyecto-nuevo/README.md)**: convertir requisitos en un proyecto estructurado, con pruebas y una API REST.
-3. **[03 · Proyecto existente](03-proyecto-existente/README.md)**: analizar un repositorio, establecer una línea base y decidir qué necesita para trabajar con IA.
-4. **[04 · Configuración del entorno de IA](04-configuracion-entorno-ia/README.md)**: crear y validar instrucciones, rules y skills, y evaluar agentes, hooks y permisos según las necesidades del proyecto.
-5. **[05 · Desarrollo de una funcionalidad con IA](05-desarrollo-funcionalidad-ia/README.md)**: especificar una funcionalidad, revisar y confirmar el plan de la IA, implementar por incrementos y verificar el resultado.
+| Laboratorio | Nivel principal | Objetivo | Referencia |
+| --- | --- | --- | --- |
+| 01 · Primer contacto | 1 | Practicar chat, autocompletado y cambios pequeños sobre un script existente. | [Abrir ejercicio](01-primer-contacto/README.md) |
+| 02 · Proyecto nuevo | 2 | Convertir requisitos en un proyecto estructurado, con pruebas y una API REST. | [Abrir ejercicio](02-proyecto-nuevo/README.md) |
+| 03 · Proyecto existente | 2 | Analizar un repositorio, establecer una línea base y decidir qué necesita para trabajar con IA. | [Abrir ejercicio](03-proyecto-existente/README.md) |
+| 04 · Configuración del entorno de IA | 3 | Crear y validar instrucciones, rules y skills, y evaluar agentes, hooks y permisos según las necesidades del proyecto. | [Abrir ejercicio](04-configuracion-entorno-ia/README.md) |
+| 05 · Desarrollo de una funcionalidad con IA | 4 | Especificar una funcionalidad, revisar y confirmar el plan de la IA, implementar por incrementos y verificar el resultado. | [Abrir ejercicio](05-desarrollo-funcionalidad-ia/README.md) |
 
 Los laboratorios 03, 04 y 05 forman una secuencia recomendada: diagnosticar el proyecto, preparar el entorno y aplicar ese contexto al desarrollo de una funcionalidad. Pueden consultarse por separado si ya se dispone de los resultados de las fases anteriores.
 
@@ -23,7 +27,7 @@ Cada laboratorio distingue dos espacios con responsabilidades diferentes:
 | Espacio | Ubicación | Contenido | Quién lo modifica |
 | --- | --- | --- | --- |
 | **Ejercicio** | `laboratorio/NN-nombre/README.md` | Objetivos, instrucciones, criterios de evaluación y referencias. | Personas que mantienen la guía. |
-| **Proyecto** | `laboratorio/NN-nombre/project/` | Código, configuración, README propio, pruebas, dependencias y artefactos generados. | La persona que realiza el ejercicio y el asistente. |
+| **Proyecto** | `laboratorio/NN-nombre/project/` cuando existe | Código, configuración, README propio, pruebas, dependencias y artefactos generados. | La persona que realiza el ejercicio y el asistente. |
 
 ```text
 laboratorio/03-proyecto-existente/
@@ -36,7 +40,14 @@ laboratorio/03-proyecto-existente/
     └── tests/
 ```
 
-Los laboratorios 02, 04 y 05 no incluyen carpeta `project/`: el 02 crea un proyecto nuevo y el 04 y el 05 continúan sobre el proyecto del 03 o sobre un repositorio propio autorizado.
+La presencia de `project/` depende del ejercicio:
+
+- El laboratorio 01 incluye un proyecto pequeño para practicar cambios acotados.
+- El laboratorio 02 propone crear un proyecto nuevo a partir de requisitos.
+- El laboratorio 03 incluye un proyecto existente para practicar el diagnóstico.
+- Los laboratorios 04 y 05 incluyen proyectos de referencia para que puedan realizarse de forma independiente; también permiten continuar con una copia propia del proyecto del laboratorio 03.
+
+Comprueba siempre la estructura real enlazada desde cada ejercicio y sigue sus instrucciones. No presupongas que todos los laboratorios contienen la misma estructura de carpetas.
 
 ## Aislamiento del espacio de trabajo
 
@@ -53,7 +64,7 @@ Si un laboratorio exige modificar la propia guía, trátalo como una tarea difer
 
 ### Copia independiente (recomendada)
 
-La carpeta `project/` sigue formando parte del repositorio de la guía. Algunas herramientas cargan instrucciones de directorios superiores o de la raíz del repositorio Git, y `git status` mostraría también el estado de la guía. Para aislar el trabajo por completo, copia el proyecto fuera de la guía y crea un repositorio propio:
+Cuando el ejercicio incluya una carpeta `project/`, sigue las instrucciones de su README. Si vas a reutilizar el proyecto en varios laboratorios, copia el proyecto fuera de la guía y crea un repositorio propio:
 
 ```bash
 cp -r laboratorio/03-proyecto-existente/project ~/labs/poi-app
@@ -63,11 +74,11 @@ git add .
 git commit -m "Estado inicial del proyecto de práctica"
 ```
 
-Así, la línea base, el diff y el estado de Git corresponden solo al proyecto, y la guía no recibe cambios accidentales. Utiliza la misma copia en los laboratorios 03, 04 y 05.
+Así, la línea base, el diff y el estado de Git corresponden solo al proyecto, y la guía no recibe cambios accidentales. Utiliza la misma copia en los laboratorios 03, 04 y 05 cuando quieras seguir la secuencia recomendada.
 
 ### Trabajo dentro de la guía
 
-Para ejercicios breves, como el laboratorio 01, puedes abrir directamente `project/` como espacio de trabajo. Limita entonces las órdenes de Git a ese directorio (`git status --short -- .`, `git diff -- .`) y no confirmes los cambios del ejercicio en el repositorio de la guía.
+Para ejercicios breves, como el laboratorio 01, puedes abrir directamente su carpeta `project/` como espacio de trabajo si existe. Limita entonces las órdenes de Git a ese directorio (`git status --short -- .`, `git diff -- .`) y no confirmes los cambios del ejercicio en el repositorio de la guía.
 
 ## Requisitos iniciales
 
