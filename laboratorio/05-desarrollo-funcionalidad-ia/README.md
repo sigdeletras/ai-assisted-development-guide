@@ -32,23 +32,17 @@ El proyecto de práctica incluye una incidencia abierta en `docs/incidencia.md`:
 8. Ejecuta las pruebas pertinentes y el conjunto completo; registra la salida real y revisa `git diff` y el estado de Git.
 9. En el cierre, relaciona cada criterio de aceptación con la prueba o evidencia que lo verifica e indica explícitamente las comprobaciones no ejecutadas.
 
-## Control previo: ¿qué información se puede compartir?
+## Control previo de seguridad y privacidad
 
-Antes de abrir el asistente, clasifica los datos y el código que podrían entrar en el contexto. Considera no solo el texto que escribes, sino también los archivos del repositorio, el contexto que adjunta automáticamente la extensión, los resultados de terminal, los registros, las capturas, el historial de sesión y las herramientas o servicios conectados.
+Antes de abrir el asistente, aplica la [lista de comprobación de seguridad y privacidad](../../docs/seguridad-privacidad-ia.md). Ten en cuenta el contexto automático: archivos, historial, terminal, logs, resultados de pruebas e integraciones.
 
-Comprueba la ficha de privacidad elaborada en el [laboratorio 04](../04-configuracion-entorno-ia/README.md):
+- Verifica que el producto, plan y modalidad están autorizados para esos datos.
+- Comprueba entrenamiento, retención/ZDR, terceros, permisos y exclusiones disponibles.
+- No incluyas secretos ni datos confidenciales si no se ha confirmado la autorización.
+- Si hay dudas, utiliza datos sintéticos o una herramienta aprobada.
+- Registra la decisión, las fuentes y la fecha.
 
-- producto, plan y modalidad de uso exactos;
-- si las entradas y el código pueden usarse para entrenar modelos;
-- condiciones de conservación y si existe un compromiso ZDR aplicable;
-- tratamiento por terceros, telemetría, historial y almacenamiento de sesiones;
-- exclusiones de archivos, permisos y política de la organización o del cliente.
-
-**No confundas «no se usa para entrenar» con «no se conserva».** Desactivar el entrenamiento no garantiza retención cero. Tampoco deduzcas que un plan gratuito carece o dispone de ZDR solo por su precio: verifica las condiciones concretas del producto y la función. Si no puedes confirmar que el tratamiento está autorizado, no envíes código propietario ni datos confidenciales; usa un proyecto sintético, una versión sanitizada o una herramienta aprobada para esa información.
-
-No incluyas secretos en el prompt ni confíes únicamente en que el asistente los ignore. Evita que entren en el contexto y revisa los permisos, los archivos incluidos y las exclusiones disponibles.
-
-Registra en el informe la decisión de privacidad, las fuentes consultadas y su fecha. Si cambian el proveedor, el plan, la función o el tipo de datos, vuelve a evaluar las condiciones.
+La exclusión del entrenamiento no garantiza retención cero. Reevalúa las condiciones si cambia la herramienta o la información utilizada.
 
 ## Método: confirmar antes de implementar
 
