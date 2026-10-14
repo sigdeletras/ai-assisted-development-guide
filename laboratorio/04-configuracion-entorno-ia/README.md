@@ -20,22 +20,13 @@ Al terminar, el repositorio tendrá una configuración **mínima, explicada y pr
 - Revisa el estado de Git antes de empezar y trabaja en una rama de ejercicio.
 - No añadas credenciales, datos personales ni información de clientes a los archivos de configuración.
 
-## Seguridad y privacidad: comprobar antes de configurar
+## Seguridad y privacidad
 
-No presupongas que una suscripción gratuita, una opción para desactivar el entrenamiento o un modo temporal equivalen a **Zero Data Retention (ZDR, retención cero de datos)**. Son controles diferentes. Una opción puede impedir el uso de conversaciones para entrenar modelos sin eliminar el historial ni garantizar que el proveedor no conserve los datos durante un periodo operativo o de seguridad.
+Antes de usar código real, aplica la [guía de seguridad y privacidad](../../docs/seguridad-privacidad-ia.md). Comprueba el producto, plan y modalidad exactos; uso para entrenamiento; retención/ZDR; terceros; permisos; y autorización contractual.
 
-Antes de usar una herramienta con código de un proyecto real, comprueba y registra:
+**Si las condiciones no están verificadas, no compartas código propietario ni datos confidenciales.** Usa datos sintéticos o una herramienta aprobada. No confundas exclusión del entrenamiento con ZDR.
 
-1. **Producto, plan y modalidad:** aplicación web, extensión del IDE, CLI, agente en la nube o API pueden tener condiciones distintas, incluso con el mismo proveedor.
-2. **Entrenamiento:** si las entradas, el código, las respuestas y los metadatos pueden utilizarse para mejorar modelos; dónde se configura la exclusión y a qué funciones se aplica.
-3. **Retención:** qué datos se conservan, durante cuánto tiempo, para qué fines y si existe un compromiso ZDR aplicable a ese producto, plan, modelo y función.
-4. **Tratamiento adicional:** proveedores de modelos, subencargados, registros de abuso, telemetría, almacenamiento de sesiones, índices de código y funciones de terceros.
-5. **Controles disponibles:** exclusión de archivos, límites de contexto, permisos, tratamiento local frente a procesamiento en la nube y configuración administrada por la organización.
-6. **Condiciones contractuales:** requisitos del cliente, NDA, política de seguridad, protección de datos y autorización para compartir código con terceros.
-
-**Regla de decisión:** si no puedes verificar las condiciones aplicables, no envíes código propietario, datos personales, secretos ni información confidencial. Usa un proyecto sintético, datos anonimizados de forma robusta o una alternativa aprobada. Desactivar el entrenamiento no equivale a ZDR; borrar el historial tampoco demuestra que no haya existido retención previa.
-
-No generalices que todos los planes gratuitos tienen las mismas condiciones ni que ningún plan gratuito ofrece controles concretos. Evalúa el servicio exacto y conserva el enlace y la fecha de la documentación consultada. Las garantías contractuales deben verificarse en los términos vigentes, no inferirse a partir de un ajuste de interfaz.
+Registra las fuentes consultadas, la fecha y la decisión de uso. Repite la comprobación si cambia el producto, el plan, la función o el tipo de datos.
 
 ## Conceptos que vas a distinguir
 
