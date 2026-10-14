@@ -97,16 +97,6 @@ Los niveles describen competencias acumulativas, pero no son certificaciones ni 
 
 **Estado de la guía:** este nivel es una orientación de desarrollo futuro. Sus prácticas de evaluación y gobierno deben completarse según las propuestas del [roadmap](../ROADMAP.md).
 
-## Vista resumida
-
-| Nivel | Competencia | Laboratorios principales | Estado |
-| --- | --- | --- | --- |
-| 1 | Tareas pequeñas y verificables | 01 | Disponible |
-| 2 | Proyectos, requisitos, Git y pruebas | 02 y 03 | Disponible; el laboratorio 03 sigue sujeto a validación según el roadmap |
-| 3 | Configuración consciente del entorno | 04 | Disponible |
-| 4 | Flujo de ingeniería trazable | 05 | Parcial; falta ampliar documentación del ciclo de vida |
-| 5 | Gobierno, evaluación y escalado | Ampliaciones futuras | Pendiente de desarrollar |
-
 ## Rutas según experiencia
 
 - **Primera experiencia con asistentes:** empieza por el nivel 1 y continúa al nivel 2.
