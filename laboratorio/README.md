@@ -1,72 +1,31 @@
 # Laboratorio de desarrollo asistido por IA
 
-Este laboratorio acompaña a la guía conceptual con ejercicios pequeños y verificables. Usa Python como punto de partida y un dominio geográfico sencillo —puntos de interés y GeoJSON— para practicar técnicas que se pueden trasladar a otros lenguajes y proyectos.
+Cinco ejercicios para practicar desarrollo asistido con un proyecto geográfico sencillo en Python. Los métodos se pueden trasladar a otros lenguajes.
 
-Consulta el [itinerario de aprendizaje](../docs/itinerario-aprendizaje.md) para conocer las competencias y los criterios de salida asociados a los laboratorios.
+Consulta el [itinerario de aprendizaje](../docs/itinerario-aprendizaje.md) para ver las competencias de cada nivel.
 
-## Proyectos y ejercicios
+## Ejercicios
 
-| Laboratorio | Nivel principal | Objetivo | Referencia |
-| --- | --- | --- | --- |
-| 01 · Primer contacto | 1 | Practicar chat, autocompletado y cambios pequeños sobre un script existente. | [Abrir ejercicio](01-primer-contacto/README.md) |
-| 02 · Proyecto nuevo | 2 | Convertir requisitos en un proyecto estructurado, con pruebas y una API REST. | [Abrir ejercicio](02-proyecto-nuevo/README.md) |
-| 03 · Proyecto existente | 2 | Analizar un repositorio, establecer una línea base y decidir qué necesita para trabajar con IA. | [Abrir ejercicio](03-proyecto-existente/README.md) |
-| 04 · Configuración del entorno de IA | 3 | Crear y validar instrucciones, rules y skills, y evaluar agentes, hooks y permisos según las necesidades del proyecto. | [Abrir ejercicio](04-configuracion-entorno-ia/README.md) |
-| 05 · Desarrollo de una funcionalidad con IA | 4 | Especificar una funcionalidad, revisar y confirmar el plan de la IA, implementar por incrementos y verificar el resultado. | [Abrir ejercicio](05-desarrollo-funcionalidad-ia/README.md) |
+| Laboratorio | Nivel | Objetivo |
+| --- | --- | --- |
+| [01 · Primer contacto](01-primer-contacto/README.md) | 1 | Practicar chat, autocompletado y cambios pequeños. |
+| [02 · Proyecto nuevo](02-proyecto-nuevo/README.md) | 2 | Convertir requisitos en un proyecto con pruebas y API REST. |
+| [03 · Proyecto existente](03-proyecto-existente/README.md) | 2 | Analizar el repositorio y establecer una línea base. |
+| [04 · Configuración del entorno](04-configuracion-entorno-ia/README.md) | 3 | Configurar y validar instrucciones, reglas, skills y permisos. |
+| [05 · Desarrollar una funcionalidad](05-desarrollo-funcionalidad-ia/README.md) | 4 | Planificar, implementar por incrementos y verificar. |
 
-Los laboratorios 03, 04 y 05 forman una secuencia recomendada: diagnosticar el proyecto, preparar el entorno y aplicar ese contexto al desarrollo de una funcionalidad. Pueden consultarse por separado si ya se dispone de los resultados de las fases anteriores.
+La secuencia recomendada es 03 → 04 → 05. Los laboratorios 01 y 02 son prácticas independientes; los demás también pueden realizarse por separado si ya se dispone del diagnóstico o configuración necesarios.
 
-El laboratorio 03 se centra en el diagnóstico y la preparación. El laboratorio 04 parte de ese diagnóstico y se centra en implementar y validar la configuración seleccionada. El laboratorio 05 practica la delegación controlada del desarrollo, con confirmación del plan antes de editar código y revisión humana del resultado. No es obligatorio crear todos los tipos de archivo ni habilitar todas las capacidades.
+## Ejercicio y proyecto son espacios distintos
 
-Los ejercicios describen resultados esperados, no una solución que haya que copiar literalmente. Usa el asistente autorizado por tu organización y compara sus propuestas con los criterios de aceptación.
+- **README del ejercicio:** instrucciones, tareas, criterios y referencias. Se mantiene en este repositorio.
+- **Proyecto de trabajo:** código, pruebas y configuración que se modifican durante la práctica.
 
-## Ejercicio y proyecto: dos espacios separados
+Abre como espacio de trabajo únicamente el proyecto, no la raíz de esta guía. Así se evita que el asistente confunda instrucciones, modifique documentación por error o ejecute comandos en el repositorio equivocado.
 
-Cada laboratorio distingue dos espacios con responsabilidades diferentes:
+## Copia independiente obligatoria
 
-| Espacio | Ubicación | Contenido | Quién lo modifica |
-| --- | --- | --- | --- |
-| **Ejercicio** | `laboratorio/NN-nombre/README.md` | Objetivos, instrucciones, criterios de evaluación y referencias. | Personas que mantienen la guía. |
-| **Proyecto** | `laboratorio/NN-nombre/project/` cuando existe | Código, configuración, README propio, pruebas, dependencias y artefactos generados. | La persona que realiza el ejercicio y el asistente. |
-
-```text
-laboratorio/03-proyecto-existente/
-├── README.md          ← instrucciones del ejercicio (no es el README del proyecto)
-└── project/           ← espacio de trabajo del asistente
-    ├── README.md      ← README propio del proyecto
-    ├── pyproject.toml
-    ├── docs/
-    ├── src/
-    └── tests/
-```
-
-La presencia de `project/` depende del ejercicio:
-
-- El laboratorio 01 incluye un proyecto pequeño para practicar cambios acotados.
-- El laboratorio 02 propone crear un proyecto nuevo a partir de requisitos.
-- El laboratorio 03 incluye un proyecto existente para practicar el diagnóstico.
-- Los laboratorios 04 y 05 incluyen proyectos de referencia para que puedan realizarse de forma independiente; también permiten continuar con una copia propia del proyecto del laboratorio 03.
-
-Comprueba siempre la estructura real enlazada desde cada ejercicio y sigue sus instrucciones. No presupongas que todos los laboratorios contienen la misma estructura de carpetas.
-
-## Aislamiento del espacio de trabajo
-
-Si el asistente trabaja desde la raíz de la guía, puede confundir el README del ejercicio con el del proyecto, cargar instrucciones que no pertenecen al proyecto o modificar la propia guía. Antes de empezar cada laboratorio:
-
-1. Lee las instrucciones del laboratorio en el repositorio de la guía.
-2. Identifica el directorio o repositorio que contiene el proyecto de trabajo.
-3. Abre ese directorio como espacio de trabajo del asistente; no uses la raíz de la guía como carpeta de trabajo.
-4. Mantén las instrucciones del laboratorio como contexto de referencia: proporciónalas explícitamente al asistente cuando las necesite, en lugar de dejar que las busque en la guía.
-5. Ejecuta pruebas, instalaciones y cambios exclusivamente en el proyecto de trabajo.
-6. Revisa con Git los archivos modificados y los artefactos generados.
-
-Si un laboratorio exige modificar la propia guía, trátalo como una tarea diferente y explícita.
-
-### Copia independiente (obligatoria)
-
-Antes de utilizar un asistente, copia el directorio `project/` del ejercicio a una ubicación fuera del repositorio de la guía. Abre únicamente esa copia como espacio de trabajo. No trabajes directamente sobre `project/` dentro de la guía ni abras la raíz de la guía en el asistente.
-
-Por ejemplo, desde la raíz del repositorio:
+Antes de utilizar un asistente, copia el proyecto fuera del repositorio de la guía. Por ejemplo:
 
 ```bash
 mkdir -p ~/labs
@@ -77,32 +36,27 @@ git add .
 git commit -m "Estado inicial del proyecto de práctica"
 ```
 
-Si la copia ya contiene un repositorio Git, comprueba su estado y su historial antes de inicializarlo de nuevo. No sobrescribas cambios existentes. Para el laboratorio 02, crea directamente un directorio nuevo fuera de la guía y desarrolla allí el proyecto.
+Si la copia ya contiene Git, revisa su estado e historial; no la reinicialices ni sobrescribas cambios existentes. Para el laboratorio 02, crea un directorio nuevo.
 
-El README del ejercicio permanece en el repositorio de la guía y contiene las tareas sugeridas con IA, los criterios de aceptación y las preguntas de reflexión. El README que está dentro de la copia del proyecto describe el código y cómo instalarlo, ejecutarlo y probarlo. Cuando el asistente necesite las instrucciones del ejercicio, proporciónaselas explícitamente como contexto; no abras la guía como espacio de trabajo para que las encuentre.
+Usa la misma copia en los laboratorios 03–05 si quieres mantener la secuencia. Si un laboratorio ofrece otro proyecto de referencia, copia ese proyecto. Proporciona al asistente las instrucciones del ejercicio explícitamente cuando las necesite; no abras la guía como espacio de trabajo.
 
-Utiliza la misma copia independiente en los laboratorios 03, 04 y 05 si quieres seguir la secuencia recomendada. Si un ejercicio incluye un proyecto de referencia propio, copia ese proyecto fuera de la guía antes de empezar.
-
-## Requisitos iniciales
+## Requisitos
 
 - Python 3.11 o posterior.
 - Git.
-- Un editor o asistente de programación aprobado para el proyecto.
-- Para ejecutar las pruebas del primer ejercicio: `python -m pip install pytest`.
+- Un editor o asistente aprobado para el proyecto.
+- Para las pruebas del laboratorio 01: `python -m pip install pytest`.
 
-El primer ejercicio no necesita servicios externos ni dependencias de geografía: utiliza coordenadas y la estructura GeoJSON directamente. FastAPI y otras dependencias se introducirán cuando aporten valor.
-
-La guía define el objetivo de aprendizaje y enlaza al ejercicio pertinente. La plantilla editorial y el flujo para crear o revisar esos ejercicios están descritos en [Diseño de ejercicios de la guía](../docs/estructura-ejercicios.md).
+No se necesitan servicios externos para el primer ejercicio. Las dependencias adicionales se incorporan cuando el proyecto las requiere.
 
 ## Método de trabajo
 
-Para cada tarea:
+1. Define el objetivo y las restricciones.
+2. Pide un plan para cambios no triviales.
+3. Haz un cambio pequeño cada vez.
+4. Revisa el diff y entiende las modificaciones.
+5. Ejecuta las pruebas y registra lo que no hayas podido verificar.
 
-1. Comprueba que el asistente trabaja en el proyecto, no en la raíz de la guía.
-2. Comprende el objetivo y las restricciones.
-3. Pide al asistente un plan si el cambio no es trivial.
-4. Trabaja en una modificación pequeña.
-5. Revisa el diff y comprueba que entiendes el código.
-6. Ejecuta las pruebas y registra cualquier limitación.
+No uses credenciales, datos de clientes ni información confidencial sin autorización. El asistente no sustituye la revisión ni la responsabilidad del desarrollador.
 
-No introduzcas datos reales de clientes, credenciales ni información confidencial. No consideres correcto un cambio solo porque el asistente indique que ha terminado.
+Más información: [Diseño de ejercicios](../docs/estructura-ejercicios.md) · [Seguridad y privacidad](../docs/seguridad-privacidad-ia.md).
