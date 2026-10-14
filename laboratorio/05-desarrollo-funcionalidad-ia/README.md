@@ -130,17 +130,13 @@ Si el proyecto utiliza pull requests, entrega el cambio para revisión; no lo in
 
 ## Registro del ejercicio
 
-Completa esta tabla en la documentación del ejercicio o en un informe breve:
+Conserva un informe breve con:
 
-| Fase | Evidencia que se debe conservar |
-| --- | --- |
-| Privacidad | Producto, plan y modalidad; clasificación de datos; controles de entrenamiento y retención/ZDR; fuentes y fecha; decisión de uso. |
-| Especificación | Petición y criterios de aceptación confirmados. |
-| Planificación | Plan propuesto por la IA y correcciones humanas. |
-| Confirmación | Versión del plan autorizada antes de editar código. |
-| Implementación | Resumen de incrementos y decisiones de revisión. |
-| Validación | Línea base y resultado posterior, comandos ejecutados, resultados y relación entre criterios y pruebas. |
-| Cierre | Diff revisado, estado de Git, limitaciones y siguiente paso. |
+- decisión de privacidad, fuentes y fecha;
+- especificación y criterios de aceptación confirmados;
+- plan propuesto y versión autorizada;
+- cambios realizados, pruebas y resultados reales;
+- diff revisado, estado de Git y limitaciones pendientes.
 
 ## Diagrama del flujo
 
@@ -168,16 +164,13 @@ flowchart TD
 
 ## Criterios de aceptación
 
-- La información que se comparte con la herramienta se ha clasificado y su uso está autorizado.
-- La decisión de privacidad identifica producto, plan y modalidad concretos; no confunde exclusión de entrenamiento con ZDR.
-- La funcionalidad tiene criterios de aceptación concretos antes de implementar.
-- La IA presenta un plan antes de modificar el código.
-- El plan se revisa y confirma explícitamente; no se autoriza un alcance ambiguo.
-- La implementación sigue el plan o documenta las desviaciones y obtiene confirmación cuando cambia el alcance.
-- Las pruebas cubren el comportamiento esperado y los casos relevantes de regresión.
-- Las comprobaciones se ejecutan y sus resultados se registran sin afirmar validaciones no realizadas.
-- Se ha revisado el diff completo y el estado de Git, incluidos posibles secretos y cambios de permisos.
-- El cierre distingue resultados demostrados, limitaciones y trabajo pendiente.
+- La herramienta está autorizada para los datos utilizados.
+- Los criterios de aceptación se acuerdan antes de implementar.
+- El plan se revisa y confirma antes de editar código.
+- Los cambios son acotados y las desviaciones se justifican.
+- Las pruebas y comprobaciones se ejecutan; los resultados no se presuponen.
+- El diff, el estado de Git y los posibles secretos o permisos se revisan.
+- El cierre identifica evidencias, limitaciones y trabajo pendiente.
 
 ## Relación con los demás laboratorios
 
