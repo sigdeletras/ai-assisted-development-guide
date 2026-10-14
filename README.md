@@ -13,5 +13,6 @@ Guía práctica para integrar asistentes y agentes de IA en el desarrollo de sof
 - [Mapa de contenidos](docs/mapa-contenidos.md): conceptos, metodologías y criterios de decisión.
 - [Herramientas de desarrollo con IA](docs/herramientas-desarrollo-ia.md): categorías y ejemplos representativos.
 - [Referencias de herramientas](docs/referencias-herramientas.md): documentación oficial, inicios rápidos y equivalencias.
-- [Roadmap](ROADMAP.md): mejoras y contenidos pendientes.
+- [Banco de ideas y temas por evaluar](docs/ideas-y-temas-por-evaluar.md): propuestas aún no evaluadas para una posible incorporación.
+- [Roadmap](ROADMAP.md): mejoras y contenidos pendientes ya evaluados y priorizados.
 - [Guía de contribución](CONTRIBUTING.md): cómo proponer, documentar y revisar cambios.
