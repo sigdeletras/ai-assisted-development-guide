@@ -28,6 +28,7 @@ flowchart TB
 - [Primeros pasos](primeros-pasos.md)
 - [Glosario de términos](glosario.md)
 - [LLM: familias de modelos, distribución y criterios de selección](referencias-llm.md)
+- [Recursos complementarios](recursos-complementarios.md)
 - [Laboratorio 01: primer contacto](../laboratorio/01-primer-contacto/README.md)
 - [Laboratorio 02: proyecto nuevo](../laboratorio/02-proyecto-nuevo/README.md)
 
@@ -111,6 +112,7 @@ El nivel indica la competencia principal, no limita el uso del laboratorio a per
 - **Herramientas de desarrollo asistido por IA:** índice orientativo por categorías.
 - **Referencias de herramientas:** enlaces oficiales específicos de cada proveedor.
 - **Referencias de LLM:** familias de modelos, modalidades de distribución y criterios de selección.
+- **Recursos complementarios:** artículos y experiencias externas que amplían la guía, sin sustituir fuentes oficiales.
 - **Roadmap:** propuestas pendientes, no contenidos ya implementados.
 
 El estado de desarrollo de nuevos contenidos se debe gestionar como trabajo editorial, no como una lista de tareas dentro de este índice.
