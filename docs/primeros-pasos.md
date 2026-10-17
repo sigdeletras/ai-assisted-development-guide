@@ -37,11 +37,17 @@ Evita peticiones amplias como «reescribe el proyecto» o «mejora todo el códi
 
 ## Practicar
 
-El [laboratorio](../laboratorio/README.md) contiene tres ejercicios progresivos:
+Empieza por el [laboratorio 01: primer contacto](../laboratorio/01-primer-contacto/README.md). La [portada del laboratorio](../laboratorio/README.md) reúne los cinco ejercicios:
 
-- [01 · Primer contacto](../laboratorio/01-primer-contacto/README.md): chat, autocompletado y cambios pequeños.
-- [02 · Proyecto nuevo](../laboratorio/02-proyecto-nuevo/README.md): requisitos, estructura y pruebas.
-- [03 · Proyecto existente](../laboratorio/03-proyecto-existente/README.md): explorar el repositorio y modificarlo con seguridad.
+- **01 · Primer contacto:** chat, autocompletado y cambios pequeños.
+- **02 · Proyecto nuevo:** convertir requisitos en un proyecto estructurado, con pruebas y API REST.
+- **03 · Proyecto existente:** explorar el repositorio y establecer una línea base.
+- **04 · Configuración del entorno de IA:** crear y validar instrucciones, rules y skills, y evaluar agentes, hooks y permisos.
+- **05 · Desarrollo de una funcionalidad con IA:** especificar, planificar, implementar por incrementos y verificar.
+
+Los laboratorios 03, 04 y 05 forman una secuencia recomendada. Puedes consultar los ejercicios por separado si ya dispones de los resultados de las fases anteriores.
+
+Consulta el [itinerario de aprendizaje](itinerario-aprendizaje.md) para conocer los niveles, sus objetivos y los criterios para avanzar.
 
 El primer ejercicio utiliza Python y un ejemplo geográfico mínimo con coordenadas y GeoJSON; el método se puede trasladar a otros lenguajes.
 

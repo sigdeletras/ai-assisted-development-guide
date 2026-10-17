@@ -13,29 +13,20 @@ Al terminar, el repositorio tendrá una configuración **mínima, explicada y pr
   - continúa con la copia del proyecto de práctica preparada en el laboratorio 03;
   - parte del proyecto incluido en [`project/`](project/README.md), que reproduce el estado esperado al terminar el laboratorio 03: el mismo código y un `AGENTS.md` con las instrucciones generales; o
   - utiliza un repositorio propio autorizado y no confidencial.
-- Si partes de `project/`, cópialo a un directorio independiente con su propio repositorio Git, igual que en el laboratorio 03.
-- Abre ese proyecto como espacio de trabajo del asistente y crea allí los archivos de configuración, nunca en la raíz de la guía. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
+- Si partes de `project/`, cópialo a un directorio fuera del repositorio de la guía y utiliza allí su propio repositorio Git, igual que en el laboratorio 03.
+- Abre únicamente esa copia como espacio de trabajo del asistente y crea allí los archivos de configuración, nunca en la guía. El README de este ejercicio contiene las tareas sugeridas con IA; el README del proyecto documenta el código. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 - Elige una herramienta principal y, si procede, una segunda herramienta con la que quieras compartir instrucciones.
 - Comprueba la documentación oficial vigente y las políticas de tu organización.
 - Revisa el estado de Git antes de empezar y trabaja en una rama de ejercicio.
 - No añadas credenciales, datos personales ni información de clientes a los archivos de configuración.
 
-## Seguridad y privacidad: comprobar antes de configurar
+## Seguridad y privacidad
 
-No presupongas que una suscripción gratuita, una opción para desactivar el entrenamiento o un modo temporal equivalen a **Zero Data Retention (ZDR, retención cero de datos)**. Son controles diferentes. Una opción puede impedir el uso de conversaciones para entrenar modelos sin eliminar el historial ni garantizar que el proveedor no conserve los datos durante un periodo operativo o de seguridad.
+Antes de usar código real, aplica la [guía de seguridad y privacidad](../../docs/seguridad-privacidad-ia.md). Comprueba el producto, plan y modalidad exactos; uso para entrenamiento; retención/ZDR; terceros; permisos; y autorización contractual.
 
-Antes de usar una herramienta con código de un proyecto real, comprueba y registra:
+**Si las condiciones no están verificadas, no compartas código propietario ni datos confidenciales.** Usa datos sintéticos o una herramienta aprobada. No confundas exclusión del entrenamiento con ZDR.
 
-1. **Producto, plan y modalidad:** aplicación web, extensión del IDE, CLI, agente en la nube o API pueden tener condiciones distintas, incluso con el mismo proveedor.
-2. **Entrenamiento:** si las entradas, el código, las respuestas y los metadatos pueden utilizarse para mejorar modelos; dónde se configura la exclusión y a qué funciones se aplica.
-3. **Retención:** qué datos se conservan, durante cuánto tiempo, para qué fines y si existe un compromiso ZDR aplicable a ese producto, plan, modelo y función.
-4. **Tratamiento adicional:** proveedores de modelos, subencargados, registros de abuso, telemetría, almacenamiento de sesiones, índices de código y funciones de terceros.
-5. **Controles disponibles:** exclusión de archivos, límites de contexto, permisos, tratamiento local frente a procesamiento en la nube y configuración administrada por la organización.
-6. **Condiciones contractuales:** requisitos del cliente, NDA, política de seguridad, protección de datos y autorización para compartir código con terceros.
-
-**Regla de decisión:** si no puedes verificar las condiciones aplicables, no envíes código propietario, datos personales, secretos ni información confidencial. Usa un proyecto sintético, datos anonimizados de forma robusta o una alternativa aprobada. Desactivar el entrenamiento no equivale a ZDR; borrar el historial tampoco demuestra que no haya existido retención previa.
-
-No generalices que todos los planes gratuitos tienen las mismas condiciones ni que ningún plan gratuito ofrece controles concretos. Evalúa el servicio exacto y conserva el enlace y la fecha de la documentación consultada. Las garantías contractuales deben verificarse en los términos vigentes, no inferirse a partir de un ajuste de interfaz.
+Registra las fuentes consultadas, la fecha y la decisión de uso. Repite la comprobación si cambia el producto, el plan, la función o el tipo de datos.
 
 ## Conceptos que vas a distinguir
 
@@ -147,14 +138,11 @@ Revisa el diff y el estado de Git. Repite el ajuste y la validación si encuentr
 
 ## Entregables
 
-- Matriz de decisiones: mecanismos implementados, pospuestos o descartados y motivo.
-- Archivos de instrucciones y configuración necesarios para las herramientas elegidas.
-- Al menos una skill probada con una tarea representativa.
-- Una regla específica validada cuando exista una necesidad real; si no, justificación de su ausencia.
-- Decisión documentada sobre agente especializado y hooks.
-- Ficha de privacidad y seguridad con fuentes y fecha de consulta, incluyendo el análisis de entrenamiento, retención/ZDR y tratamiento por terceros.
-- Registro breve de las pruebas de validación, incidencias y ajustes.
-- Diff revisado y estado final de Git.
+- Matriz breve de mecanismos: aplicado, descartado o pendiente, con motivo.
+- Instrucciones y configuración mínimas para las herramientas elegidas.
+- Skill probada, si aporta valor; decisión justificada sobre reglas, agentes y hooks.
+- Ficha de privacidad y permisos con fuentes y fecha.
+- Evidencia de validación y diff revisado.
 
 ## Flujo de trabajo
 
@@ -178,16 +166,12 @@ flowchart TD
 
 ## Criterios de aceptación
 
-- Cada mecanismo implementado responde a una necesidad identificada y documentada.
-- Las instrucciones no inventan arquitectura, comandos ni convenciones.
-- Las reglas tienen un ámbito explícito y no se aplican indiscriminadamente.
-- La skill incluye un procedimiento comprobable y se ha probado.
-- Agentes especializados y hooks se incorporan solo si están justificados y soportados por la herramienta.
-- Los permisos son proporcionales a la tarea; no se versionan secretos.
-- La privacidad se ha evaluado para el producto, plan y modalidad concretos; no se confunde exclusión de entrenamiento con ZDR.
-- La ficha de privacidad incluye fuentes y fecha, y no se envían datos no autorizados.
-- Las diferencias entre herramientas están documentadas y verificadas en sus fuentes oficiales.
-- La validación deja evidencias observables, y el diff y el estado final de Git se han revisado.
+- Cada mecanismo responde a una necesidad comprobada.
+- Las instrucciones y reglas no inventan convenciones ni se duplican sin motivo.
+- La skill, si existe, se ha probado con una tarea representativa.
+- Agentes, hooks y permisos son proporcionales y compatibles con la herramienta.
+- Privacidad, retención/ZDR y autorización de datos están verificadas para el producto concreto.
+- La validación deja evidencias observables y el diff está revisado.
 
 ## Fuentes oficiales para consultar antes de configurar
 

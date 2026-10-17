@@ -8,7 +8,7 @@ Practicar chat, autocompletado y edición puntual en un script Python pequeño, 
 
 El proyecto está en [`project/`](project/README.md). Su módulo `src/pois.py` contiene una función para construir una entidad GeoJSON de tipo `Point`. No utiliza librerías externas.
 
-Abre `project/` como espacio de trabajo del asistente, no esta carpeta ni la raíz de la guía. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
+Antes de empezar, copia `project/` a un directorio fuera del repositorio de la guía y abre esa copia como espacio de trabajo del asistente. No abras esta carpeta ni la raíz de la guía en el asistente. El README de este ejercicio contiene las tareas sugeridas con IA; el README dentro de la copia describe el proyecto. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 
 ## Ejercicios
 

@@ -8,8 +8,8 @@ El objetivo no es conseguir que la IA escriba mucho código, sino completar un c
 
 ## Preparación
 
-- Utiliza la copia del proyecto de práctica de los laboratorios anteriores o un repositorio propio autorizado y no confidencial.
-- Abre ese proyecto como espacio de trabajo del asistente, no la raíz de la guía. Proporciónale estas instrucciones explícitamente cuando las necesite. Consulta el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo).
+- Utiliza la copia independiente del proyecto de los laboratorios anteriores o copia un proyecto de referencia a un directorio fuera del repositorio de la guía. También puedes utilizar un repositorio propio autorizado y no confidencial.
+- Abre únicamente esa copia como espacio de trabajo del asistente, nunca la raíz de la guía. Este README contiene las tareas sugeridas con IA; el README del proyecto documenta el código. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 - Comprueba que el estado de Git está limpio o que cualquier cambio previo está identificado y protegido.
 - Verifica que las pruebas de la línea base siguen pasando.
 - Comprueba qué instrucciones y mecanismos de configuración aplican a la tarea.
@@ -32,23 +32,17 @@ El proyecto de práctica incluye una incidencia abierta en `docs/incidencia.md`:
 8. Ejecuta las pruebas pertinentes y el conjunto completo; registra la salida real y revisa `git diff` y el estado de Git.
 9. En el cierre, relaciona cada criterio de aceptación con la prueba o evidencia que lo verifica e indica explícitamente las comprobaciones no ejecutadas.
 
-## Control previo: ¿qué información se puede compartir?
+## Control previo de seguridad y privacidad
 
-Antes de abrir el asistente, clasifica los datos y el código que podrían entrar en el contexto. Considera no solo el texto que escribes, sino también los archivos del repositorio, el contexto que adjunta automáticamente la extensión, los resultados de terminal, los registros, las capturas, el historial de sesión y las herramientas o servicios conectados.
+Antes de abrir el asistente, aplica la [lista de comprobación de seguridad y privacidad](../../docs/seguridad-privacidad-ia.md). Ten en cuenta el contexto automático: archivos, historial, terminal, logs, resultados de pruebas e integraciones.
 
-Comprueba la ficha de privacidad elaborada en el [laboratorio 04](../04-configuracion-entorno-ia/README.md):
+- Verifica que el producto, plan y modalidad están autorizados para esos datos.
+- Comprueba entrenamiento, retención/ZDR, terceros, permisos y exclusiones disponibles.
+- No incluyas secretos ni datos confidenciales si no se ha confirmado la autorización.
+- Si hay dudas, utiliza datos sintéticos o una herramienta aprobada.
+- Registra la decisión, las fuentes y la fecha.
 
-- producto, plan y modalidad de uso exactos;
-- si las entradas y el código pueden usarse para entrenar modelos;
-- condiciones de conservación y si existe un compromiso ZDR aplicable;
-- tratamiento por terceros, telemetría, historial y almacenamiento de sesiones;
-- exclusiones de archivos, permisos y política de la organización o del cliente.
-
-**No confundas «no se usa para entrenar» con «no se conserva».** Desactivar el entrenamiento no garantiza retención cero. Tampoco deduzcas que un plan gratuito carece o dispone de ZDR solo por su precio: verifica las condiciones concretas del producto y la función. Si no puedes confirmar que el tratamiento está autorizado, no envíes código propietario ni datos confidenciales; usa un proyecto sintético, una versión sanitizada o una herramienta aprobada para esa información.
-
-No incluyas secretos en el prompt ni confíes únicamente en que el asistente los ignore. Evita que entren en el contexto y revisa los permisos, los archivos incluidos y las exclusiones disponibles.
-
-Registra en el informe la decisión de privacidad, las fuentes consultadas y su fecha. Si cambian el proveedor, el plan, la función o el tipo de datos, vuelve a evaluar las condiciones.
+La exclusión del entrenamiento no garantiza retención cero. Reevalúa las condiciones si cambia la herramienta o la información utilizada.
 
 ## Método: confirmar antes de implementar
 
@@ -136,17 +130,13 @@ Si el proyecto utiliza pull requests, entrega el cambio para revisión; no lo in
 
 ## Registro del ejercicio
 
-Completa esta tabla en la documentación del ejercicio o en un informe breve:
+Conserva un informe breve con:
 
-| Fase | Evidencia que se debe conservar |
-| --- | --- |
-| Privacidad | Producto, plan y modalidad; clasificación de datos; controles de entrenamiento y retención/ZDR; fuentes y fecha; decisión de uso. |
-| Especificación | Petición y criterios de aceptación confirmados. |
-| Planificación | Plan propuesto por la IA y correcciones humanas. |
-| Confirmación | Versión del plan autorizada antes de editar código. |
-| Implementación | Resumen de incrementos y decisiones de revisión. |
-| Validación | Línea base y resultado posterior, comandos ejecutados, resultados y relación entre criterios y pruebas. |
-| Cierre | Diff revisado, estado de Git, limitaciones y siguiente paso. |
+- decisión de privacidad, fuentes y fecha;
+- especificación y criterios de aceptación confirmados;
+- plan propuesto y versión autorizada;
+- cambios realizados, pruebas y resultados reales;
+- diff revisado, estado de Git y limitaciones pendientes.
 
 ## Diagrama del flujo
 
@@ -174,16 +164,13 @@ flowchart TD
 
 ## Criterios de aceptación
 
-- La información que se comparte con la herramienta se ha clasificado y su uso está autorizado.
-- La decisión de privacidad identifica producto, plan y modalidad concretos; no confunde exclusión de entrenamiento con ZDR.
-- La funcionalidad tiene criterios de aceptación concretos antes de implementar.
-- La IA presenta un plan antes de modificar el código.
-- El plan se revisa y confirma explícitamente; no se autoriza un alcance ambiguo.
-- La implementación sigue el plan o documenta las desviaciones y obtiene confirmación cuando cambia el alcance.
-- Las pruebas cubren el comportamiento esperado y los casos relevantes de regresión.
-- Las comprobaciones se ejecutan y sus resultados se registran sin afirmar validaciones no realizadas.
-- Se ha revisado el diff completo y el estado de Git, incluidos posibles secretos y cambios de permisos.
-- El cierre distingue resultados demostrados, limitaciones y trabajo pendiente.
+- La herramienta está autorizada para los datos utilizados.
+- Los criterios de aceptación se acuerdan antes de implementar.
+- El plan se revisa y confirma antes de editar código.
+- Los cambios son acotados y las desviaciones se justifican.
+- Las pruebas y comprobaciones se ejecutan; los resultados no se presuponen.
+- El diff, el estado de Git y los posibles secretos o permisos se revisan.
+- El cierre identifica evidencias, limitaciones y trabajo pendiente.
 
 ## Relación con los demás laboratorios
 

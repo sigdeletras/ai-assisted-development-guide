@@ -8,8 +8,8 @@ El laboratorio se centra en **comprender y configurar antes de delegar cambios**
 
 ## Proyecto de práctica
 
-- Utiliza una copia de un proyecto propio no confidencial o el proyecto de práctica incluido en [`project/`](project/README.md).
-- Trabaja en una copia independiente del proyecto, con su propio repositorio Git, y ábrela como espacio de trabajo del asistente. Sigue el [aislamiento del espacio de trabajo](../README.md#aislamiento-del-espacio-de-trabajo); este README contiene las instrucciones del ejercicio, no la documentación del proyecto.
+- Utiliza un proyecto propio no confidencial o copia el proyecto incluido en [`project/`](project/README.md) a un directorio fuera del repositorio de la guía.
+- Abre únicamente esa copia independiente como espacio de trabajo del asistente y utiliza su propio repositorio Git. Este README contiene las tareas sugeridas con IA; el README dentro de la copia documenta el proyecto. Proporciona las instrucciones del ejercicio explícitamente al asistente cuando las necesite. Sigue el [procedimiento común de copia independiente](../README.md#copia-independiente-obligatoria).
 - Utiliza la misma copia en los laboratorios 04 y 05. El laboratorio 04 incluye además una réplica de este proyecto con las instrucciones generales ya creadas, para quien empiece directamente por él.
 - Comprueba las políticas de la organización antes de enviar código a un servicio de IA.
 - No incluyas credenciales, datos personales, secretos ni información contractual.
@@ -73,30 +73,17 @@ Decide qué mecanismo de instrucciones persistentes corresponde a las herramient
 
 Los nombres y capacidades dependen de la herramienta y pueden cambiar. Antes de crear archivos, consulta la documentación oficial vigente de los asistentes que realmente se vayan a usar. La tabla es orientativa, no una garantía de compatibilidad universal.
 
-#### Pasos para crear el `AGENTS.md`
+#### Crear instrucciones generales
 
-Si `AGENTS.md` es el mecanismo elegido, sigue la [guía oficial del formato](https://agents.md/) y los criterios de [Instrucciones persistentes del proyecto](../../docs/instrucciones-persistentes.md#el-formato-agentsmd):
+Si eliges `AGENTS.md`:
 
-1. **Comprueba si ya existen instrucciones.** Busca `AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md` u otros archivos equivalentes. Si existen, revísalos en lugar de crear uno paralelo.
-2. **Crea el archivo en la raíz del proyecto.** En un proyecto pequeño basta uno; los archivos anidados solo tienen sentido en subproyectos con necesidades distintas.
-3. **Redacta los temas recomendados** a partir de las conclusiones de los ejercicios 1 a 3, sin añadir nada que no esté respaldado por un archivo o una salida:
-   - descripción del proyecto en pocas líneas, remitiendo al README para la estructura;
-   - comandos de instalación, pruebas, lint, formato y tipos, copiados de la línea base;
-   - convenciones de código confirmadas;
-   - instrucciones de pruebas: qué ejecutar, dónde se añaden pruebas nuevas y qué hacer si una prueba existente parece incorrecta;
-   - consideraciones de seguridad: archivos que no se deben leer ni modificar y tratamiento de secretos.
-4. **Añade los temas adicionales que necesite el proyecto**, como las convenciones de commits y pull requests o los límites de alcance para cambios no solicitados.
-5. **Revisa cada línea.** Debe ser concreta y verificable, y no repetir el README. Recuerda que el agente intentará ejecutar los comandos que aparezcan, así que deben funcionar.
-6. **Configura el resto de herramientas solo si hace falta.** Comprueba en su documentación oficial si leen `AGENTS.md` directamente. Si una no lo lee, añade su archivo propio remitiendo a `AGENTS.md` en lugar de copiar el contenido.
-7. **Comprueba que se carga** en una sesión nueva: pregunta por los comandos y los límites del proyecto o usa la función de la herramienta que muestra los archivos cargados, como `/context` en Claude Code. Registra el resultado.
+1. Revisa primero si ya existen instrucciones equivalentes.
+2. Resume solo hechos comprobados: propósito, comandos reales, convenciones, pruebas y límites.
+3. No dupliques el README ni inventes comandos o normas.
+4. Consulta la documentación oficial de cada herramienta; no todas cargan el mismo formato.
+5. Abre una sesión nueva y comprueba que las instrucciones se aplican. Registra el resultado.
 
-> **Si la herramienta no carga `AGENTS.md`.** Una forma fiable de comprobarlo es preguntar algo que solo esté en ese archivo, como si puede hacer commit al terminar. En GitHub Copilot para VS Code, las causas habituales son:
->
-> - **La carpeta abierta no es la raíz del proyecto.** Copilot solo lee `AGENTS.md` en la raíz del workspace. Abre la carpeta del proyecto, no una carpeta superior.
-> - **El workspace está en modo restringido.** Si VS Code no confía en la carpeta, desactiva Git y no carga las instrucciones del workspace. Ocurre a menudo con carpetas nuevas o sincronizadas, como las de OneDrive. Ejecuta `Workspaces: Manage Workspace Trust`, marca la carpeta como de confianza y recarga la ventana.
-> - **La conversación es anterior al archivo o la sesión no es local.** Abre un chat nuevo, en una sesión local.
->
-> Para comprobarlo, mira las referencias de la respuesta: `AGENTS.md` debe aparecer entre ellas. Si el asistente dice que la carpeta no es un repositorio Git cuando sí lo es, sospecha del modo restringido.
+Si una herramienta no admite `AGENTS.md`, utiliza su mecanismo específico solo cuando sea necesario y evita mantener copias divergentes.
 
 El ejercicio 5 completa la validación con una tarea de planificación.
 
