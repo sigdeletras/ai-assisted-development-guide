@@ -4,31 +4,45 @@ Consulta esta página para acceder a la documentación oficial y a guías de acc
 
 ## Acceso rápido
 
+### Selección principal
+
 | Entorno | Herramienta / modalidad | Documentación o acceso |
 | --- | --- | --- |
 | Escritorio | GitHub Copilot app | [Documentación](https://docs.github.com/en/copilot/concepts/copilot-surfaces/github-copilot-app) · [Inicio rápido](https://docs.github.com/en/copilot/get-started/quickstart-copilot-app) |
 | Escritorio | OpenAI Codex en la app de ChatGPT | [Guía de la app](https://developers.openai.com/codex/app) |
-| Escritorio | Cline Desktop | [Página de Cline Desktop](https://cline.bot/desktop) · [Descripción general](https://docs.cline.bot/cline-overview) |
+| Escritorio | Google Antigravity 2.0 | [Anuncio oficial](https://antigravity.google/blog/introducing-google-antigravity-2) · [Descarga](https://antigravity.google/download) |
+| Escritorio | OpenCode Desktop | [Documentación](https://opencode.ai/docs/) · [Descargas e instalación](https://opencode.ai/download) |
 | Cliente de terminal (CLI) | Claude Code | [Documentación](https://code.claude.com/docs/en/overview) · [Quickstart](https://code.claude.com/docs/en/quickstart) |
 | Cliente de terminal (CLI) | OpenAI Codex CLI | [Documentación](https://developers.openai.com/codex/cli) |
-| Cliente de terminal (CLI) | Gemini CLI | [Repositorio y documentación](https://github.com/google-gemini/gemini-cli) |
-| Cliente de terminal (CLI) | OpenCode | [Documentación](https://opencode.ai/docs/) |
-| Cliente de terminal (CLI) | Aider | [Documentación](https://aider.chat/docs/) |
-| Cliente de terminal (CLI) | Cline CLI | [Documentación](https://docs.cline.bot/usage/cli-overview) |
+| Cliente de terminal (CLI) | Google Antigravity CLI | [Documentación](https://antigravity.google/blog/introducing-google-antigravity-cli) · [Instalación](https://antigravity.google/cli) |
+| Cliente de terminal (CLI) | Gemini CLI* | [Documentación](https://geminicli.com/) · [Transición a Antigravity CLI](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli) |
+| Cliente de terminal (CLI) | OpenCode CLI/TUI | [CLI](https://opencode.ai/docs/cli/) · [TUI](https://opencode.ai/docs/tui/) |
 | IDE — editor / entorno | Visual Studio Code | [Documentación](https://code.visualstudio.com/docs) |
 | IDE — editor / entorno | Cursor | [Documentación](https://cursor.com/docs) · [Quickstart](https://cursor.com/docs/get-started/quickstart) |
-| IDE — editor / entorno | Kiro | [Documentación](https://kiro.dev/docs/) |
+| IDE — editor / entorno | Google Antigravity IDE | [Documentación y anuncio de Antigravity 2.0](https://antigravity.google/blog/introducing-google-antigravity-2) |
 | IDE — extensión | GitHub Copilot | [Documentación de Copilot](https://docs.github.com/en/copilot) |
 | IDE — extensión | OpenAI Codex | [Documentación](https://developers.openai.com/codex/ide) |
-| IDE — extensión | Gemini Code Assist | [Documentación](https://cloud.google.com/gemini/docs/codeassist/overview) · [IDE compatibles](https://cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) |
-| IDE — extensión | Continue | [Documentación](https://docs.continue.dev/) · [Extensión de VS Code](https://marketplace.visualstudio.com/items?itemName=Continue.continue) |
-| IDE — extensión / plugin | Cline | [Descripción general y editores compatibles](https://docs.cline.bot/cline-overview) · [Plugin JetBrains](https://plugins.jetbrains.com/plugin/27189-cline) |
-| IDE — protocolo ACP | Cline en Neovim | [Documentación ACP](https://docs.cline.bot/usage/acp) |
+| IDE — extensión | OpenCode | [Integración IDE](https://opencode.ai/docs/ide/) |
 | Web | OpenAI Codex web | [Codex web](https://chatgpt.com/codex) |
 | Web | GitHub Copilot coding agent | [Documentación de Copilot](https://docs.github.com/en/copilot) · [Buenas prácticas](https://docs.github.com/en/copilot/using-github-copilot/using-copilot-coding-agent-to-work-on-tasks/best-practices-for-using-copilot-to-work-on-tasks) |
-| Web | Cline Kanban | [Repositorio oficial](https://github.com/cline/kanban) |
+| Web | OpenCode Web | [Documentación](https://opencode.ai/docs/web/) |
 
 La clasificación describe el entorno principal de cada modalidad; no implica que todas las herramientas ofrezcan las mismas funciones ni que estén disponibles con todos los planes. Comprueba la documentación y las políticas aplicables a tu organización.
+
+* Para usuarios gratuitos y de Google One, Gemini CLI fue sustituido por [Antigravity CLI](https://antigravity.google/cli) en junio de 2026. Gemini CLI continúa disponible para determinados clientes empresariales y mediante claves API de pago; consulta el [anuncio oficial](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli).
+
+Como referencia de uso declarado, Stack Overflow publicó en 2026 la [encuesta sobre agentes de programación](https://survey.stackoverflow.co/2026/ai/data/ai-code-agent) (n = 12.255 respuestas): Claude Code 66 %, GitHub Copilot 59 %, OpenAI Codex 30 %, Cursor 26 %, Google Antigravity 16 % y OpenCode 14 %. Son resultados de esa encuesta, no cuotas de mercado ni una medida universal de popularidad.
+
+### Otras herramientas
+
+Kiro, Devin, Aider y Cline quedan como referencias complementarias para mantener manejable la selección principal. Es una decisión editorial, no un ranking de popularidad.
+
+| Herramienta | Entornos | Referencias |
+| --- | --- | --- |
+| Kiro | IDE, CLI, web y móvil (iOS, acceso anticipado) | [Documentación](https://kiro.dev/docs/) |
+| Devin | Escritorio/IDE, CLI y web | [Documentación](https://docs.devin.ai/) |
+| Aider | CLI | [Documentación](https://aider.chat/docs/) |
+| Cline | Escritorio, CLI, IDE y web | [Documentación](https://docs.cline.bot/cline-overview) |
 
 ## Equivalencias orientativas
 
@@ -67,6 +81,16 @@ La app de escritorio ofrece sesiones con agentes para carpetas locales o reposit
 - **Primer proyecto:** [Your first project](https://prod.cursor.com/help/getting-started/first-project).
 - **Privacidad y datos:** [Data Use & Privacy Overview](https://cursor.com/es/data-use) y [Privacy and data](https://prod.cursor.com/help/security-and-privacy/privacy). Revisa el estado de Privacy Mode, el modelo seleccionado y las excepciones indicadas por el proveedor.
 
+### OpenCode
+
+OpenCode es un agente de código abierto disponible como app de escritorio, cliente de terminal, integración para IDE e interfaz web. OpenCode Web se sirve desde un proceso local; si se cambia su configuración para permitir conexiones desde la red, hay que proteger el acceso.
+
+- **Documentación e instalación:** [OpenCode Docs](https://opencode.ai/docs/) · [descargas](https://opencode.ai/download).
+- **Escritorio:** aplicación OpenCode Desktop; consulta la documentación y las opciones oficiales de descarga.
+- **Terminal:** [CLI](https://opencode.ai/docs/cli/) y [TUI](https://opencode.ai/docs/tui/).
+- **IDE:** [integración con VS Code y editores compatibles](https://opencode.ai/docs/ide/).
+- **Web:** [OpenCode Web](https://opencode.ai/docs/web/), interfaz de navegador para un servidor local de OpenCode.
+
 ### OpenAI Codex
 
 Codex agrupa varias superficies de trabajo. No confundas el producto de escritorio ChatGPT con una aplicación independiente llamada Codex; selecciona Codex dentro de ChatGPT para tareas de desarrollo. Las funciones y el acceso pueden variar según el entorno, el plan y la configuración.
@@ -79,26 +103,14 @@ Codex agrupa varias superficies de trabajo. No confundas el producto de escritor
 - **Web:** [Codex web](https://chatgpt.com/codex).
 - **Privacidad y datos:** [Controles de datos de la plataforma API](https://developers.openai.com/api/docs/guides/your-data) y [controles de datos de ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-faq). No asumas que las condiciones de la API, ChatGPT y los distintos clientes de Codex son idénticas.
 
-### Gemini Code Assist
+### Otras herramientas
 
-- **Documentación:** [Gemini Code Assist overview](https://cloud.google.com/gemini/docs/codeassist/overview).
-- **IDE compatibles:** [VS Code, JetBrains y otros IDE](https://cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides). Consulta esta página para comprobar compatibilidad y disponibilidad de funciones.
-- Las ediciones y los entornos pueden tener capacidades, requisitos y condiciones de privacidad diferentes; verifica los que se aplican a tu cuenta u organización.
+Para ampliar la selección principal, consulta las referencias oficiales:
 
-### Continue
-
-- **Documentación:** [Continue Docs](https://docs.continue.dev/).
-- **Extensión de VS Code:** [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Continue.continue).
-- Consulta la documentación para configurar modelos y proveedores y revisar las condiciones de uso y tratamiento de datos de los servicios que conectes.
-
-### Cline
-
-- **Descripción general:** [Cline Overview](https://docs.cline.bot/cline-overview), con enlaces a sus aplicaciones y editores compatibles.
-- **Escritorio:** [Cline Desktop](https://cline.bot/desktop).
-- **Terminal:** [Cline CLI](https://docs.cline.bot/usage/cli-overview), con modo interactivo y opciones de ejecución sin interfaz.
-- **IDE:** extensión de VS Code y plugin para [JetBrains](https://plugins.jetbrains.com/plugin/27189-cline); la documentación también indica compatibilidad con Cursor, Windsurf, Antigravity y Zed. [Neovim mediante ACP](https://docs.cline.bot/usage/acp).
-- **Web:** [Cline Kanban](https://github.com/cline/kanban), tablero para gestionar agentes en paralelo.
-- **SDK:** [Cline SDK](https://docs.cline.bot/sdk/overview) para crear agentes, automatizaciones e integraciones propias.
+- **Kiro:** IDE, CLI, web y acceso anticipado para iOS — [documentación](https://kiro.dev/docs/).
+- **Devin:** escritorio/IDE, CLI y agente web — [documentación](https://docs.devin.ai/) · [historia de Windsurf](https://cognition.com/blog/windsurf).
+- **Aider:** cliente de terminal — [documentación](https://aider.chat/docs/).
+- **Cline:** escritorio, CLI, IDE y web — [descripción general](https://docs.cline.bot/cline-overview).
 
 ### AGENTS.md
 
