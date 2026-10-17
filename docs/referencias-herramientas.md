@@ -1,17 +1,19 @@
 # Referencias de herramientas
 
-Consulta esta página para acceder a la documentación oficial y al inicio rápido de cada herramienta. La metodología de trabajo y los criterios de decisión se desarrollan en [Primeros pasos](primeros-pasos.md) y en el [mapa de contenidos](mapa-contenidos.md).
+Consulta esta página para acceder a la documentación oficial y a guías de acceso e inicio rápido de las herramientas. La metodología de trabajo y los criterios de decisión se desarrollan en [Primeros pasos](primeros-pasos.md) y en el [mapa de contenidos](mapa-contenidos.md).
 
 ## Acceso rápido
 
-| Herramienta | Documentación | Inicio rápido |
+| Herramienta | Documentación | Guía / acceso |
 | --- | --- | --- |
 | GitHub Copilot | [Documentación de Copilot](https://docs.github.com/en/copilot) | [Primeros pasos con la app de Copilot](https://docs.github.com/en/copilot/get-started/quickstart-copilot-app) |
 | Claude Code | [Documentación de Claude Code](https://code.claude.com/docs/en/overview) | [Quickstart](https://code.claude.com/docs/en/quickstart) |
 | Cursor | [Documentación de Cursor](https://cursor.com/docs) | [Quickstart](https://prod.cursor.com/docs/get-started/quickstart) |
 | OpenAI Codex | [Documentación de Codex](https://developers.openai.com/learn/codex) | [Inicio rápido de Codex CLI](https://github.com/openai/codex#quickstart) |
+| Gemini Code Assist | [Documentación](https://cloud.google.com/gemini/docs/codeassist/overview) | [IDE compatibles](https://cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) |
+| Continue | [Documentación](https://docs.continue.dev/) | [Extensión de VS Code](https://marketplace.visualstudio.com/items?itemName=Continue.continue) |
 
-Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en la nube). El inicio rápido enlazado corresponde a una modalidad concreta; comprueba que sea la adecuada para tu entorno y las políticas de tu organización.
+Los productos ofrecen distintas modalidades (IDE, CLI, aplicación o agente en la nube). El enlace de guía o acceso puede corresponder a una modalidad concreta; comprueba que sea la adecuada para tu entorno y las políticas de tu organización.
 
 ## Equivalencias orientativas
 
@@ -50,6 +52,18 @@ Codex ofrece distintos puntos de entrada, entre ellos CLI, extensión para IDE, 
 - **Recursos para desarrolladores:** [Codex — OpenAI Developers](https://developers.openai.com/learn/codex).
 - **CLI:** [Repositorio oficial de Codex CLI](https://github.com/openai/codex).
 - **Privacidad y datos:** [Controles de datos de la plataforma API](https://developers.openai.com/api/docs/guides/your-data) y [controles de datos de ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-faq). No asumas que las condiciones de la API, ChatGPT y los distintos clientes de Codex son idénticas.
+
+### Gemini Code Assist
+
+- **Documentación:** [Gemini Code Assist overview](https://cloud.google.com/gemini/docs/codeassist/overview).
+- **IDE compatibles:** [VS Code, JetBrains y otros IDE](https://cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides). Consulta esta página para comprobar compatibilidad y disponibilidad de funciones.
+- Las ediciones y los entornos pueden tener capacidades, requisitos y condiciones de privacidad diferentes; verifica los que se aplican a tu cuenta u organización.
+
+### Continue
+
+- **Documentación:** [Continue Docs](https://docs.continue.dev/).
+- **Extensión de VS Code:** [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Continue.continue).
+- Consulta la documentación para configurar modelos y proveedores y revisar las condiciones de uso y tratamiento de datos de los servicios que conectes.
 
 ### AGENTS.md
 

@@ -29,6 +29,8 @@ Las categorías describen la interfaz o el flujo de trabajo principal, no límit
 
 | Herramienta | Enfoque | Documentación oficial |
 | --- | --- | --- |
+| **Gemini Code Assist** | Asistente de programación disponible como extensión para VS Code y otros IDE; ofrece funciones de generación y completado de código y asistencia mediante chat. Las funciones y condiciones dependen de la edición y el entorno. | [Documentación](https://cloud.google.com/gemini/docs/codeassist/overview) · [IDE compatibles](https://cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) |
+| **Continue** | Extensión de código abierto para VS Code y JetBrains que integra asistencia de programación con modelos y proveedores configurables. | [Documentación](https://docs.continue.dev/) · [Extensión de VS Code](https://marketplace.visualstudio.com/items?itemName=Continue.continue) |
 | **Cline** | Agente integrado en VS Code que puede trabajar con archivos, terminal y herramientas externas bajo un flujo de control configurable. | [Documentación](https://docs.cline.bot/) |
 | **Aider** | Asistente de programación desde terminal con integración con Git y soporte para distintos modelos. | [Documentación](https://aider.chat/docs/) |
 
